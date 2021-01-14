@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>HTTP Client - My Docs</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Api <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../cmis/" class="dropdown-item">CMIS</a>
+</li>
+                                    
+<li>
+    <a href="../../console/" class="dropdown-item">Console</a>
+</li>
+                                    
+<li>
+    <a href="../../log_logging/" class="dropdown-item">Logging</a>
+</li>
+                                    
+<li>
+    <a href="../../security_user/" class="dropdown-item">Security User</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Bpm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../bpm/bpm_process/" class="dropdown-item">BPM Process</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../core/core_assert/" class="dropdown-item">Assert</a>
+</li>
+            
+<li>
+    <a href="../../core/core_config/" class="dropdown-item">Config</a>
+</li>
+            
+<li>
+    <a href="../../core/core_configurations/" class="dropdown-item">Configurations</a>
+</li>
+            
+<li>
+    <a href="../../core/core_context/" class="dropdown-item">Context</a>
+</li>
+            
+<li>
+    <a href="../../core/core_destinations/" class="dropdown-item">Destinations</a>
+</li>
+            
+<li>
+    <a href="../../core/core_env/" class="dropdown-item">Env</a>
+</li>
+            
+<li>
+    <a href="../../core/core_extensions/" class="dropdown-item">Extensions</a>
+</li>
+            
+<li>
+    <a href="../../core/core_globals/" class="dropdown-item">Globals</a>
+</li>
+            
+<li>
+    <a href="../../core/core_java/" class="dropdown-item">Java</a>
+</li>
+            
+<li>
+    <a href="../../core/core_template-engine/" class="dropdown-item">Template Engine</a>
+</li>
+            
+<li>
+    <a href="../../core/core_threads/" class="dropdown-item">Thread</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Database</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../database/database/" class="dropdown-item">Database</a>
+</li>
+            
+<li>
+    <a href="../../database/database_dao/" class="dropdown-item">Database DAO</a>
+</li>
+            
+<li>
+    <a href="../../database/database_query/" class="dropdown-item">Database Query</a>
+</li>
+            
+<li>
+    <a href="../../database/database_sequence/" class="dropdown-item">Database Sequence</a>
+</li>
+            
+<li>
+    <a href="../../database/database_sql/" class="dropdown-item">Database SQL</a>
+</li>
+            
+<li>
+    <a href="../../database/database_update/" class="dropdown-item">Database Update</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Http</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../client-async/" class="dropdown-item">Client Async</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">HTTP Client</a>
+</li>
+            
+<li>
+    <a href="../request/" class="dropdown-item">Request</a>
+</li>
+            
+<li>
+    <a href="../response/" class="dropdown-item">Response</a>
+</li>
+            
+<li>
+    <a href="../rs-data/" class="dropdown-item">RS-Data</a>
+</li>
+            
+<li>
+    <a href="../rs/" class="dropdown-item">RS</a>
+</li>
+            
+<li>
+    <a href="../session/" class="dropdown-item">Session</a>
+</li>
+            
+<li>
+    <a href="../upload/" class="dropdown-item">Upload</a>
+</li>
+            
+<li>
+    <a href="../user/" class="dropdown-item">User</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Indexing</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../indexing/indexing/" class="dropdown-item">Indexing</a>
+</li>
+            
+<li>
+    <a href="../../indexing/indexing_searcher/" class="dropdown-item">Indexing Searcher</a>
+</li>
+            
+<li>
+    <a href="../../indexing/indexing_writer/" class="dropdown-item">Indexing Writer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Io</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../io/io_bytes/" class="dropdown-item">Bytes</a>
+</li>
+            
+<li>
+    <a href="../../io/io_files/" class="dropdown-item">Files</a>
+</li>
+            
+<li>
+    <a href="../../io/io_ftp/" class="dropdown-item">FTP Client</a>
+</li>
+            
+<li>
+    <a href="../../io/io_streams/" class="dropdown-item">Streams</a>
+</li>
+            
+<li>
+    <a href="../../io/io_zip/" class="dropdown-item">Zip</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Kafka</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../kafka/kafka_consumer/" class="dropdown-item">Kafka Consumer</a>
+</li>
+            
+<li>
+    <a href="../../kafka/kafka_producer/" class="dropdown-item">Kafka Producer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Mail</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../mail/mail/" class="dropdown-item">Mail</a>
+</li>
+            
+<li>
+    <a href="../../mail/mail_client/" class="dropdown-item">Mail</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Messaging</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../messaging/messaging/" class="dropdown-item">Messaging</a>
+</li>
+            
+<li>
+    <a href="../../messaging/messaging_consumer/" class="dropdown-item">Message Consumer</a>
+</li>
+            
+<li>
+    <a href="../../messaging/messaging_producer/" class="dropdown-item">Message Producer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Mongodb</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../mongodb/mongodb_client/" class="dropdown-item">MongoDB Client API</a>
+</li>
+            
+<li>
+    <a href="../../mongodb/mongodb_dao/" class="dropdown-item">MongoDB DAO API</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Net</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../net/net_soap/" class="dropdown-item">SOAP</a>
+</li>
+            
+<li>
+    <a href="../../net/net_websocket/" class="dropdown-item">Websocket</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Platform</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../platform/platform_engines/" class="dropdown-item">Engines</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_lifecycle/" class="dropdown-item">Lifecycle</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_registry/" class="dropdown-item">Registry</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_repository/" class="dropdown-item">Repository</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_template-engines/" class="dropdown-item">Template Engines</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_workspace/" class="dropdown-item">Workspace</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Repository</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../repository/repository/" class="dropdown-item">Repository</a>
+</li>
+            
+<li>
+    <a href="../../repository/repository_content/" class="dropdown-item">Repository Content</a>
+</li>
+            
+<li>
+    <a href="../../repository/repository_manager/" class="dropdown-item">Repository Manager</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../utils/utils_base64/" class="dropdown-item">Base64</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_digest/" class="dropdown-item">Digest</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_error/" class="dropdown-item">Error</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_escape/" class="dropdown-item">Escape Utils</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_hex/" class="dropdown-item">Hex</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_url/" class="dropdown-item">Url</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_uuid/" class="dropdown-item">UUID</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_xml/" class="dropdown-item">XML</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_xss/" class="dropdown-item">XSS</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../client-async/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../request/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#http-client" class="nav-link">HTTP Client</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#version-4x" class="nav-link">Version 4.x</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#definition" class="nav-link">Definition</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#version-3x" class="nav-link">Version 3.x</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#definition_1" class="nav-link">Definition</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#version-2x" class="nav-link">Version 2.x</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#basic-usage_2" class="nav-link">Basic Usage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#definition_2" class="nav-link">Definition</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="http-client">HTTP Client</h2>
+<p>HTTP Client is used by scripting services to call external services via HTTP.</p>
+<h2 id="version-4x">Version 4.x</h2>
+<ul>
+<li>Module: <strong>http/v4/client</strong></li>
+<li>Alias: <strong>http/client</strong></li>
+<li>Definition: <a href="https://github.com/eclipse/dirigible/issues/15">https://github.com/eclipse/dirigible/issues/15</a></li>
+<li>Source: <a href="https://github.com/dirigiblelabs/api-http/blob/master/http/v4/client.js">/http/v4/client.js</a></li>
+<li>Facade: <a href="https://github.com/eclipse/dirigible/blob/master/api/api-facade/api-http/src/main/java/org/eclipse/dirigible/api/v3/http/HttpClientFacade.java">HttpClientFacade</a></li>
+<li>Status: <strong>stable</strong></li>
+</ul>
+<h3 id="basic-usage">Basic Usage</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">httpClient</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;http/v4/client&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;http/v4/response&quot;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">httpResponse</span> <span class="o">=</span> <span class="nx">httpClient</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://services.odata.org/V4/Northwind/Northwind.svc/&quot;</span><span class="p">);</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="nx">httpResponse</span><span class="p">.</span><span class="nx">statusMessage</span><span class="p">);</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="nx">httpResponse</span><span class="p">.</span><span class="nx">text</span><span class="p">);</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">flush</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</code></pre></div>
+<h2 id="definition">Definition</h2>
+<h3 id="functions">Functions</h3>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>get(url, options)</strong></td>
+<td>Makes a HTTP GET request to a remote service at the URL by the HttpOptions and returns the result</td>
+<td><em>HttpResponse</em></td>
+</tr>
+<tr>
+<td><strong>post(url, options)</strong></td>
+<td>Makes a HTTP POST request to a remote service at the URL by the HttpOptions and returns the result</td>
+<td><em>HttpResponse</em></td>
+</tr>
+<tr>
+<td><strong>put(url, options)</strong></td>
+<td>Makes a HTTP PUT request to a remote service at the URL by the HttpOptions and returns the result</td>
+<td><em>HttpResponse</em></td>
+</tr>
+<tr>
+<td><strong>delete(url, options)</strong></td>
+<td>Makes a HTTP DELETE request to a remote service at the URL by the HttpOptions and returns the result</td>
+<td><em>HttpResponse</em></td>
+</tr>
+<tr>
+<td><strong>head(url, options)</strong></td>
+<td>Makes a HTTP HEAD request to a remote service at the URL by the HttpOptions and returns the result</td>
+<td><em>HttpResponse</em></td>
+</tr>
+<tr>
+<td><strong>trace(url, options)</strong></td>
+<td>Makes a HTTP TRACE request to a remote service at the URL by the HttpOptions and returns the result</td>
+<td><em>HttpResponse</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="objects">Objects</h3>
+<hr />
+<h4 id="httpresponse">HttpResponse</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>statusCode</strong></td>
+<td>The Response status code</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>statusMessage</strong></td>
+<td>The Response status message</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>data</strong></td>
+<td>The Response data</td>
+<td><em>array of bytes</em></td>
+</tr>
+<tr>
+<td><strong>text</strong></td>
+<td>The Response data as text</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>binary</strong></td>
+<td>Whether the Response data is binary in <em>data</em> or string in <em>text</em></td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>protocol</strong></td>
+<td>The HTTP version of the Response</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>headers</strong></td>
+<td>The Response headers</td>
+<td><em>array of HttpHeader</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="httpheader">HttpHeader</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>name</strong></td>
+<td>The name of the header</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>value</strong></td>
+<td>The value of the header</td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="httpparam">HttpParam</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>name</strong></td>
+<td>The name of the param</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>value</strong></td>
+<td>The value of the param</td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="httpoptions">HttpOptions</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>data</strong></td>
+<td>The body of the HTTP Request as binary</td>
+<td><em>array of bytes</em></td>
+</tr>
+<tr>
+<td><strong>text</strong></td>
+<td>The body of the HTTP Request as text</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>files</strong></td>
+<td>The body of the HTTP Request as files (for POST)</td>
+<td><em>array of strings</em></td>
+</tr>
+<tr>
+<td><strong>params</strong></td>
+<td>The body of the HTTP Request as form parameters</td>
+<td><em>array of HttpParam</em></td>
+</tr>
+<tr>
+<td><strong>binary</strong></td>
+<td>Whether the body of the HTTP Request is binary</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>characterEncodingEnabled</strong></td>
+<td>The character encoding enabled parameter. Default is true</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>characterEncoding</strong></td>
+<td>The character encoding parameter. Default is UTF-8</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>contentType</strong></td>
+<td>The content type parameter. Default is <em>plain/text</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>headers</strong></td>
+<td>The Response headers</td>
+<td><em>array of HttpHeader</em></td>
+</tr>
+<tr>
+<td><strong>proxyHost</strong></td>
+<td>The proxy host parameter</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>proxyPort</strong></td>
+<td>The proxy port parameter</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>expectContinueEnabled</strong></td>
+<td>The continue enabled parameter</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>cookieSpec</strong></td>
+<td>The cookieSpec parameter</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>redirectsEnabled</strong></td>
+<td>The redirects enabled parameter</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>relativeRedirectsAllowed</strong></td>
+<td>The relative redirects allowed parameter</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>circularRedirectsAllowed</strong></td>
+<td>The circular redirects allowed parameter</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>maxRedirects</strong></td>
+<td>The max redirects parameter</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>authenticationEnabled</strong></td>
+<td>The authentication enabled parameter</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>targetPreferredAuthSchemes</strong></td>
+<td>The target preferred authentication schemes parameter</td>
+<td><em>array of strings</em></td>
+</tr>
+<tr>
+<td><strong>proxyPreferredAuthSchemes</strong></td>
+<td>The proxy preferred authentication schemes parameter</td>
+<td><em>array of strings</em></td>
+</tr>
+<tr>
+<td><strong>connectionRequestTimeout</strong></td>
+<td>The connection request timeout parameter</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>connectTimeout</strong></td>
+<td>The connect timeout parameter</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>socketTimeout</strong></td>
+<td>The socket timeout parameter</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>contentCompressionEnabled</strong></td>
+<td>The content compression enabled parameter</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>sslTrustAllEnabled</strong></td>
+<td>The SSL trust all enabled parameter</td>
+<td><em>boolean</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="compatibility">Compatibility</h3>
+<table>
+<thead>
+<tr>
+<th>Rhino</th>
+<th>Nashorn</th>
+<th>V8</th>
+<th>Graal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="version-3x">Version 3.x</h2>
+<ul>
+<li>Module: <strong>http/v3/client</strong></li>
+<li>Alias: <strong>http/client</strong></li>
+<li>Definition: <a href="https://github.com/eclipse/dirigible/issues/15">https://github.com/eclipse/dirigible/issues/15</a></li>
+<li>Source: <a href="https://github.com/dirigiblelabs/api-v3-http/blob/master/http/v3/client.js">/http/v3/client.js</a></li>
+<li>Facade: <a href="https://github.com/eclipse/dirigible/blob/master/api/api-facade/api-http/src/main/java/org/eclipse/dirigible/api/v3/http/HttpClientFacade.java">HttpClientFacade</a></li>
+<li>Status: <strong>alpha</strong></li>
+</ul>
+<h3 id="basic-usage_1">Basic Usage</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">httpClient</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;http/v3/client&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;http/v3/response&quot;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">httpResponse</span> <span class="o">=</span> <span class="nx">httpClient</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;https://services.odata.org/V4/Northwind/Northwind.svc/&quot;</span><span class="p">);</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="nx">httpResponse</span><span class="p">.</span><span class="nx">statusMessage</span><span class="p">);</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="nx">httpResponse</span><span class="p">.</span><span class="nx">text</span><span class="p">);</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">flush</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</code></pre></div>
+<h2 id="definition_1">Definition</h2>
+<h3 id="functions_1">Functions</h3>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>get(url, options)</strong></td>
+<td>Makes a HTTP GET request to a remote service at the URL by the HttpOptions and returns the result</td>
+<td><em>HttpResponse</em></td>
+</tr>
+<tr>
+<td><strong>post(url, options)</strong></td>
+<td>Makes a HTTP POST request to a remote service at the URL by the HttpOptions and returns the result</td>
+<td><em>HttpResponse</em></td>
+</tr>
+<tr>
+<td><strong>put(url, options)</strong></td>
+<td>Makes a HTTP PUT request to a remote service at the URL by the HttpOptions and returns the result</td>
+<td><em>HttpResponse</em></td>
+</tr>
+<tr>
+<td><strong>delete(url, options)</strong></td>
+<td>Makes a HTTP DELETE request to a remote service at the URL by the HttpOptions and returns the result</td>
+<td><em>HttpResponse</em></td>
+</tr>
+<tr>
+<td><strong>head(url, options)</strong></td>
+<td>Makes a HTTP HEAD request to a remote service at the URL by the HttpOptions and returns the result</td>
+<td><em>HttpResponse</em></td>
+</tr>
+<tr>
+<td><strong>trace(url, options)</strong></td>
+<td>Makes a HTTP TRACE request to a remote service at the URL by the HttpOptions and returns the result</td>
+<td><em>HttpResponse</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="objects_1">Objects</h3>
+<hr />
+<h4 id="httpresponse_1">HttpResponse</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>statusCode</strong></td>
+<td>The Response status code</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>statusMessage</strong></td>
+<td>The Response status message</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>data</strong></td>
+<td>The Response data</td>
+<td><em>array of bytes</em></td>
+</tr>
+<tr>
+<td><strong>text</strong></td>
+<td>The Response data as text</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>binary</strong></td>
+<td>Whether the Response data is binary in <em>data</em> or string in <em>text</em></td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>protocol</strong></td>
+<td>The HTTP version of the Response</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>headers</strong></td>
+<td>The Response headers</td>
+<td><em>array of HttpHeader</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="httpheader_1">HttpHeader</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>name</strong></td>
+<td>The name of the header</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>value</strong></td>
+<td>The value of the header</td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="httpparam_1">HttpParam</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>name</strong></td>
+<td>The name of the param</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>value</strong></td>
+<td>The value of the param</td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="httpoptions_1">HttpOptions</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>data</strong></td>
+<td>The body of the HTTP Request as binary</td>
+<td><em>array of bytes</em></td>
+</tr>
+<tr>
+<td><strong>text</strong></td>
+<td>The body of the HTTP Request as text</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>files</strong></td>
+<td>The body of the HTTP Request as files (for POST)</td>
+<td><em>array of strings</em></td>
+</tr>
+<tr>
+<td><strong>params</strong></td>
+<td>The body of the HTTP Request as form parameters</td>
+<td><em>array of HttpParam</em></td>
+</tr>
+<tr>
+<td><strong>binary</strong></td>
+<td>Whether the body of the HTTP Request is binary</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>characterEncodingEnabled</strong></td>
+<td>The character encoding enabled parameter. Default is true</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>characterEncoding</strong></td>
+<td>The character encoding parameter. Default is UTF-8</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>contentType</strong></td>
+<td>The content type parameter. Default is <em>plain/text</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>headers</strong></td>
+<td>The Response headers</td>
+<td><em>array of HttpHeader</em></td>
+</tr>
+<tr>
+<td><strong>proxyHost</strong></td>
+<td>The proxy host parameter</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>proxyPort</strong></td>
+<td>The proxy port parameter</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>expectContinueEnabled</strong></td>
+<td>The continue enabled parameter</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>cookieSpec</strong></td>
+<td>The cookieSpec parameter</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>redirectsEnabled</strong></td>
+<td>The redirects enabled parameter</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>relativeRedirectsAllowed</strong></td>
+<td>The relative redirects allowed parameter</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>circularRedirectsAllowed</strong></td>
+<td>The circular redirects allowed parameter</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>maxRedirects</strong></td>
+<td>The max redirects parameter</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>authenticationEnabled</strong></td>
+<td>The authentication enabled parameter</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>targetPreferredAuthSchemes</strong></td>
+<td>The target preferred authentication schemes parameter</td>
+<td><em>array of strings</em></td>
+</tr>
+<tr>
+<td><strong>proxyPreferredAuthSchemes</strong></td>
+<td>The proxy preferred authentication schemes parameter</td>
+<td><em>array of strings</em></td>
+</tr>
+<tr>
+<td><strong>connectionRequestTimeout</strong></td>
+<td>The connection request timeout parameter</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>connectTimeout</strong></td>
+<td>The connect timeout parameter</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>socketTimeout</strong></td>
+<td>The socket timeout parameter</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>contentCompressionEnabled</strong></td>
+<td>The content compression enabled parameter</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>sslTrustAllEnabled</strong></td>
+<td>The SSL trust all enabled parameter</td>
+<td><em>boolean</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="compatibility_1">Compatibility</h3>
+<table>
+<thead>
+<tr>
+<th>Rhino</th>
+<th>Nashorn</th>
+<th>V8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="version-2x">Version 2.x</h2>
+<ul>
+<li>Module: <strong>net/http/client</strong></li>
+<li>Definition: <a href="https://github.com/dirigiblelabs/core_api/issues/3">/core_api/issues/3</a></li>
+<li>Source: <a href="https://github.com/dirigiblelabs/core_api/blob/master/core_api/ScriptingServices/net/http/client.js">/net/http/client.js</a></li>
+<li>Status: <strong>beta</strong></li>
+</ul>
+<h2 id="basic-usage_2">Basic Usage</h2>
+<div class="highlight"><pre><span></span><code><span class="cm">/* globals $ */</span>
+<span class="cm">/* eslint-env node, dirigible */</span>
+
+<span class="kd">var</span> <span class="nx">httpClient</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;net/http/client&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;net/http/response&#39;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">httpResponse</span> <span class="o">=</span> <span class="nx">httpClient</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;http://services.odata.org/V4/Northwind/Northwind.svc/&#39;</span><span class="p">);</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="nx">httpResponse</span><span class="p">.</span><span class="nx">statusMessage</span><span class="p">);</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="nx">httpResponse</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">flush</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</code></pre></div>
+<h2 id="definition_2">Definition</h2>
+<h3 id="functions_2">Functions</h3>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>get(url, options)</strong></td>
+<td>Makes a HTTP GET request to a remote service at the URL by the HttpOptions and returns the result</td>
+<td><em>HttpResponse</em></td>
+</tr>
+<tr>
+<td><strong>post(url, options)</strong></td>
+<td>Makes a HTTP POST request to a remote service at the URL by the HttpOptions and returns the result</td>
+<td><em>HttpResponse</em></td>
+</tr>
+<tr>
+<td><strong>put(url, options)</strong></td>
+<td>Makes a HTTP PUT request to a remote service at the URL by the HttpOptions and returns the result</td>
+<td><em>HttpResponse</em></td>
+</tr>
+<tr>
+<td><strong>delete(url, options)</strong></td>
+<td>Makes a HTTP DELETE request to a remote service at the URL by the HttpOptions and returns the result</td>
+<td><em>HttpResponse</em></td>
+</tr>
+<tr>
+<td><strong>request(options)</strong></td>
+<td>Makes a HTTP request to a remote service and returns the result</td>
+<td><em>HttpResponse</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="objects_2">Objects</h3>
+<hr />
+<h4 id="httpresponse_2">HttpResponse</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>statusCode</strong></td>
+<td>The Response status code</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>statusMessage</strong></td>
+<td>The Response status message</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>data</strong></td>
+<td>The Response data</td>
+<td><em>array of bytes</em></td>
+</tr>
+<tr>
+<td><strong>httpVersion</strong></td>
+<td>The HTTP version of the Response</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>headers</strong></td>
+<td>The Response headers</td>
+<td><em>array of HttpHeader</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="httpheader_2">HttpHeader</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>name</strong></td>
+<td>The name of the header</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>value</strong></td>
+<td>The value of the header</td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="httpoptions_2">HttpOptions</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>host</strong></td>
+<td>The host parameter</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>port</strong></td>
+<td>The port parameter</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>method</strong></td>
+<td>The method parameter - GET, POST, PUT, DELETE. Default GET</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td>The body of the HTTP Request</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>charset</strong></td>
+<td>The charset parameter. Default</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>headers</strong></td>
+<td>The Response headers</td>
+<td><em>array of HttpHeader</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="compatibility_2">Compatibility</h3>
+<table>
+<thead>
+<tr>
+<th>Rhino</th>
+<th>Nashorn</th>
+<th>V8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

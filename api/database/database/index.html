@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Database - My Docs</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Api <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../cmis/" class="dropdown-item">CMIS</a>
+</li>
+                                    
+<li>
+    <a href="../../console/" class="dropdown-item">Console</a>
+</li>
+                                    
+<li>
+    <a href="../../log_logging/" class="dropdown-item">Logging</a>
+</li>
+                                    
+<li>
+    <a href="../../security_user/" class="dropdown-item">Security User</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Bpm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../bpm/bpm_process/" class="dropdown-item">BPM Process</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../core/core_assert/" class="dropdown-item">Assert</a>
+</li>
+            
+<li>
+    <a href="../../core/core_config/" class="dropdown-item">Config</a>
+</li>
+            
+<li>
+    <a href="../../core/core_configurations/" class="dropdown-item">Configurations</a>
+</li>
+            
+<li>
+    <a href="../../core/core_context/" class="dropdown-item">Context</a>
+</li>
+            
+<li>
+    <a href="../../core/core_destinations/" class="dropdown-item">Destinations</a>
+</li>
+            
+<li>
+    <a href="../../core/core_env/" class="dropdown-item">Env</a>
+</li>
+            
+<li>
+    <a href="../../core/core_extensions/" class="dropdown-item">Extensions</a>
+</li>
+            
+<li>
+    <a href="../../core/core_globals/" class="dropdown-item">Globals</a>
+</li>
+            
+<li>
+    <a href="../../core/core_java/" class="dropdown-item">Java</a>
+</li>
+            
+<li>
+    <a href="../../core/core_template-engine/" class="dropdown-item">Template Engine</a>
+</li>
+            
+<li>
+    <a href="../../core/core_threads/" class="dropdown-item">Thread</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Database</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="./" class="dropdown-item active">Database</a>
+</li>
+            
+<li>
+    <a href="../database_dao/" class="dropdown-item">Database DAO</a>
+</li>
+            
+<li>
+    <a href="../database_query/" class="dropdown-item">Database Query</a>
+</li>
+            
+<li>
+    <a href="../database_sequence/" class="dropdown-item">Database Sequence</a>
+</li>
+            
+<li>
+    <a href="../database_sql/" class="dropdown-item">Database SQL</a>
+</li>
+            
+<li>
+    <a href="../database_update/" class="dropdown-item">Database Update</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Http</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../http/client-async/" class="dropdown-item">Client Async</a>
+</li>
+            
+<li>
+    <a href="../../http/client/" class="dropdown-item">HTTP Client</a>
+</li>
+            
+<li>
+    <a href="../../http/request/" class="dropdown-item">Request</a>
+</li>
+            
+<li>
+    <a href="../../http/response/" class="dropdown-item">Response</a>
+</li>
+            
+<li>
+    <a href="../../http/rs-data/" class="dropdown-item">RS-Data</a>
+</li>
+            
+<li>
+    <a href="../../http/rs/" class="dropdown-item">RS</a>
+</li>
+            
+<li>
+    <a href="../../http/session/" class="dropdown-item">Session</a>
+</li>
+            
+<li>
+    <a href="../../http/upload/" class="dropdown-item">Upload</a>
+</li>
+            
+<li>
+    <a href="../../http/user/" class="dropdown-item">User</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Indexing</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../indexing/indexing/" class="dropdown-item">Indexing</a>
+</li>
+            
+<li>
+    <a href="../../indexing/indexing_searcher/" class="dropdown-item">Indexing Searcher</a>
+</li>
+            
+<li>
+    <a href="../../indexing/indexing_writer/" class="dropdown-item">Indexing Writer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Io</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../io/io_bytes/" class="dropdown-item">Bytes</a>
+</li>
+            
+<li>
+    <a href="../../io/io_files/" class="dropdown-item">Files</a>
+</li>
+            
+<li>
+    <a href="../../io/io_ftp/" class="dropdown-item">FTP Client</a>
+</li>
+            
+<li>
+    <a href="../../io/io_streams/" class="dropdown-item">Streams</a>
+</li>
+            
+<li>
+    <a href="../../io/io_zip/" class="dropdown-item">Zip</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Kafka</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../kafka/kafka_consumer/" class="dropdown-item">Kafka Consumer</a>
+</li>
+            
+<li>
+    <a href="../../kafka/kafka_producer/" class="dropdown-item">Kafka Producer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Mail</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../mail/mail/" class="dropdown-item">Mail</a>
+</li>
+            
+<li>
+    <a href="../../mail/mail_client/" class="dropdown-item">Mail</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Messaging</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../messaging/messaging/" class="dropdown-item">Messaging</a>
+</li>
+            
+<li>
+    <a href="../../messaging/messaging_consumer/" class="dropdown-item">Message Consumer</a>
+</li>
+            
+<li>
+    <a href="../../messaging/messaging_producer/" class="dropdown-item">Message Producer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Mongodb</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../mongodb/mongodb_client/" class="dropdown-item">MongoDB Client API</a>
+</li>
+            
+<li>
+    <a href="../../mongodb/mongodb_dao/" class="dropdown-item">MongoDB DAO API</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Net</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../net/net_soap/" class="dropdown-item">SOAP</a>
+</li>
+            
+<li>
+    <a href="../../net/net_websocket/" class="dropdown-item">Websocket</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Platform</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../platform/platform_engines/" class="dropdown-item">Engines</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_lifecycle/" class="dropdown-item">Lifecycle</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_registry/" class="dropdown-item">Registry</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_repository/" class="dropdown-item">Repository</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_template-engines/" class="dropdown-item">Template Engines</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_workspace/" class="dropdown-item">Workspace</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Repository</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../repository/repository/" class="dropdown-item">Repository</a>
+</li>
+            
+<li>
+    <a href="../../repository/repository_content/" class="dropdown-item">Repository Content</a>
+</li>
+            
+<li>
+    <a href="../../repository/repository_manager/" class="dropdown-item">Repository Manager</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../utils/utils_base64/" class="dropdown-item">Base64</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_digest/" class="dropdown-item">Digest</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_error/" class="dropdown-item">Error</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_escape/" class="dropdown-item">Escape Utils</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_hex/" class="dropdown-item">Hex</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_url/" class="dropdown-item">Url</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_uuid/" class="dropdown-item">UUID</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_xml/" class="dropdown-item">XML</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_xss/" class="dropdown-item">XSS</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../core/core_threads/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../database_dao/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#pagetitle" class="nav-link">{{ page.title }}</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#version-4x" class="nav-link">Version 4.x</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#compatibility" class="nav-link">Compatibility</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#version-3x" class="nav-link">Version 3.x</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#compatibility_1" class="nav-link">Compatibility</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#version-2x" class="nav-link">Version 2.x</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#basic-usage_2" class="nav-link">Basic Usage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#definition_2" class="nav-link">Definition</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#compatibility_2" class="nav-link">Compatibility</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="pagetitle">{{ page.title }}</h1>
+<p>Standard access to the registered relational data sources.</p>
+<h2 id="version-4x">Version 4.x</h2>
+<ul>
+<li>Module: <strong>db/v4/database</strong></li>
+<li>Alias: <strong>db/database</strong></li>
+<li>Definition: <a href="https://github.com/eclipse/dirigible/issues/21">https://github.com/eclipse/dirigible/issues/21</a></li>
+<li>Source: <a href="https://github.com/dirigiblelabs/api-db/blob/master/db/v4/database.js">/db/v4/database.js</a></li>
+<li>Facade: <a href="https://github.com/eclipse/dirigible/blob/master/api/api-facade/api-database/src/main/java/org/eclipse/dirigible/api/v3/db/DatabaseFacade.java">DatabaseFacade</a></li>
+<li>Status: <strong>stable</strong></li>
+</ul>
+<h3 id="basic-usage">Basic Usage</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">database</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;db/v4/database&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;http/v4/response&quot;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">connection</span> <span class="o">=</span> <span class="nx">database</span><span class="p">.</span><span class="nx">getConnection</span><span class="p">();</span>
+<span class="k">try</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">statement</span> <span class="o">=</span> <span class="nx">connection</span><span class="p">.</span><span class="nx">prepareStatement</span><span class="p">(</span><span class="s2">&quot;select * from DIRIGIBLE_EXTENSIONS&quot;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">resultSet</span> <span class="o">=</span> <span class="nx">statement</span><span class="p">.</span><span class="nx">executeQuery</span><span class="p">();</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nx">resultSet</span><span class="p">.</span><span class="nx">next</span><span class="p">())</span> <span class="p">{</span>
+        <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;[path]: &quot;</span> <span class="o">+</span> <span class="nx">resultSet</span><span class="p">.</span><span class="nx">getString</span><span class="p">(</span><span class="s2">&quot;EXTENSION_LOCATION&quot;</span><span class="p">));</span>
+    <span class="p">}</span>
+    <span class="nx">resultSet</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+    <span class="nx">statement</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+<span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">trace</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">finally</span> <span class="p">{</span>
+    <span class="nx">connection</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">flush</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="definition">Definition</h3>
+<h4 id="functions">Functions</h4>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getDatabaseTypes()</strong></td>
+<td>Returns the list of the available databases in this instance</td>
+<td><em>list of string</em></td>
+</tr>
+<tr>
+<td><strong>getDataSources(databaseType)</strong></td>
+<td>Returns the list of the available data-sources in this instance for the given <em>databaseType</em>. In case the <em>databaseType</em> is not present, the data-sources of the default database type are listed</td>
+<td><em>list of string</em></td>
+</tr>
+<tr>
+<td><strong>createDataSource(name, driver, url, username, password, properties)</strong></td>
+<td>Creates a named dynamic datasource based on the provided parameters</td>
+<td><em>-</em></td>
+</tr>
+<tr>
+<td><strong>getMetadata(databaseType, datasourceName)</strong></td>
+<td>Returns the metadata of the selected <em>databaseType</em> and <em>datasourceName</em>. In case the <em>datasourceName</em> parameter is omitted, then the default data-source for the selected database is taken. In case the <em>databaseType</em> is omitted, then the default data-source of the default database type is taken</td>
+<td><em>metadata object</em></td>
+</tr>
+<tr>
+<td><strong>getConnection(databaseType, datasourceName)</strong></td>
+<td>Establishes a connection to the selected data-source. Both parameters are optional</td>
+<td><em>Connection</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="objects">Objects</h3>
+<hr />
+<h4 id="connection">Connection</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>prepareStatement(sql)</strong></td>
+<td>Creates a prepared statement by the given SQL script</td>
+<td><em>Statement</em></td>
+</tr>
+<tr>
+<td><strong>close()</strong></td>
+<td>Closes the Connection and returns it to the pool</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>commit()</strong></td>
+<td>Commits the current transaction</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>getAutoCommit()</strong></td>
+<td>Returns the value of the auto commit setting</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>getCatalog()</strong></td>
+<td>Returns the Catalog name, which the Connection is related to</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getSchema()</strong></td>
+<td>Returns the Schema name, which the Connection is related to</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getTransactionIsolation()</strong></td>
+<td>Returns the value of the transaction isolation setting</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>isClosed()</strong></td>
+<td>Returns true if the Connection is already closed and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>isReadOnly()</strong></td>
+<td>Returns true if the Connection is opened in a read only state and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>isValid()</strong></td>
+<td>Returns true if the Connection is still valid and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>rollback()</strong></td>
+<td>Rolls the current transaction back</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setAutoCommit(autoCommit)</strong></td>
+<td>Sets the value of the auto commit setting</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setCatalog(catalog)</strong></td>
+<td>Sets the Catalog name, which the Connection is related to</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setSchema(schema)</strong></td>
+<td>Sets the Schema name, which the Connection is related to</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setReadOnly(readOnly)</strong></td>
+<td>Sets the value of the read only state</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setTransactionIsolation(transactionIsolation)</strong></td>
+<td>Sets the value of the transaction isolation setting</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="statement">Statement</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>close()</strong></td>
+<td>Closes the Statement</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>executeQuery()</strong></td>
+<td>Executes a query and returns a ResultSet</td>
+<td><em>ResultSet</em></td>
+</tr>
+<tr>
+<td><strong>executeUpdate()</strong></td>
+<td>Executes an update SQL statement</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setNull(index, value)</strong></td>
+<td>Sets a parameter as null</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setBoolean(index, value)</strong></td>
+<td>Sets a parameter of type boolean</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setDate(index, value)</strong></td>
+<td>Sets a parameter of type date</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setDouble(index, value)</strong></td>
+<td>Sets a parameter of type double</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setFloat(index, value)</strong></td>
+<td>Sets a parameter of type float</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setInt(index, value)</strong></td>
+<td>Sets a parameter of type integer</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setLong(index, value)</strong></td>
+<td>Sets a parameter of type long</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setShort(index, value)</strong></td>
+<td>Sets a parameter of type short</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setString(index, value)</strong></td>
+<td>Sets a parameter of type string</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setTime(index, value)</strong></td>
+<td>Sets a parameter of type time</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setTimestamp(index, value)</strong></td>
+<td>Sets a parameter of type timestamp</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="resultset">ResultSet</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>close()</strong></td>
+<td>Closes the ResultSet</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>getBoolean(identifier)</strong></td>
+<td>Returns a value of type boolean</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>getDate(identifier)</strong></td>
+<td>Returns a value of type date</td>
+<td><em>Date</em></td>
+</tr>
+<tr>
+<td><strong>getDouble(identifier)</strong></td>
+<td>Returns a value of type double</td>
+<td><em>double</em></td>
+</tr>
+<tr>
+<td><strong>getFloat(identifier)</strong></td>
+<td>Returns a value of type float</td>
+<td><em>float</em></td>
+</tr>
+<tr>
+<td><strong>getInt(identifier)</strong></td>
+<td>Returns a value of type integer</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>getLong(identifier)</strong></td>
+<td>Returns a value of type long</td>
+<td><em>long</em></td>
+</tr>
+<tr>
+<td><strong>getShort(identifier)</strong></td>
+<td>Returns a value of type short</td>
+<td><em>short</em></td>
+</tr>
+<tr>
+<td><strong>getString(identifier)</strong></td>
+<td>Returns a value of type string</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getTime(identifier)</strong></td>
+<td>Returns a value of type time</td>
+<td><em>Date</em></td>
+</tr>
+<tr>
+<td><strong>getTimestamp(identifier)</strong></td>
+<td>Returns a value of type timestamp</td>
+<td><em>Date</em></td>
+</tr>
+<tr>
+<td><strong>isAfterLast()</strong></td>
+<td>Returns true if the ResultSet is iterated at the end and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>isBeforeFirst()</strong></td>
+<td>Returns true if the ResultSet is iterated at the beginning and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>isFirst()</strong></td>
+<td>Returns true if the ResultSet is iterated at the first row and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>isLast()</strong></td>
+<td>Returns true if the ResultSet is iterated at the last row and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>isClosed()</strong></td>
+<td>Returns true if the ResultSet is already closed and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>next()</strong></td>
+<td>Iterates the ResultSet to the next row and returns true if it is successful. Returns false if no more rows remain.</td>
+<td><em>boolean</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="compatibility">Compatibility</h2>
+<table>
+<thead>
+<tr>
+<th>Rhino</th>
+<th>Nashorn</th>
+<th>V8</th>
+<th>Graal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="version-3x">Version 3.x</h2>
+<ul>
+<li>Module: <strong>db/v3/database</strong></li>
+<li>Alias: <strong>db/database</strong></li>
+<li>Definition: <a href="https://github.com/eclipse/dirigible/issues/21">https://github.com/eclipse/dirigible/issues/21</a></li>
+<li>Source: <a href="https://github.com/dirigiblelabs/api-v3-db/blob/master/db/v3/database.js">/db/v3/database.js</a></li>
+<li>Facade: <a href="https://github.com/eclipse/dirigible/blob/master/api/api-facade/api-database/src/main/java/org/eclipse/dirigible/api/v3/db/DatabaseFacade.java">DatabaseFacade</a></li>
+<li>Status: <strong>alpha</strong></li>
+</ul>
+<h3 id="basic-usage_1">Basic Usage</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">database</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;db/v3/database&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;http/v3/response&quot;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">connection</span> <span class="o">=</span> <span class="nx">database</span><span class="p">.</span><span class="nx">getConnection</span><span class="p">();</span>
+<span class="k">try</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">statement</span> <span class="o">=</span> <span class="nx">connection</span><span class="p">.</span><span class="nx">prepareStatement</span><span class="p">(</span><span class="s2">&quot;select * from DIRIGIBLE_EXTENSIONS&quot;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">resultSet</span> <span class="o">=</span> <span class="nx">statement</span><span class="p">.</span><span class="nx">executeQuery</span><span class="p">();</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nx">resultSet</span><span class="p">.</span><span class="nx">next</span><span class="p">())</span> <span class="p">{</span>
+        <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;[path]: &quot;</span> <span class="o">+</span> <span class="nx">resultSet</span><span class="p">.</span><span class="nx">getString</span><span class="p">(</span><span class="s2">&quot;EXTENSION_LOCATION&quot;</span><span class="p">));</span>
+    <span class="p">}</span>
+    <span class="nx">resultSet</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+    <span class="nx">statement</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+<span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">trace</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">finally</span> <span class="p">{</span>
+    <span class="nx">connection</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">flush</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="definition_1">Definition</h3>
+<h4 id="functions_1">Functions</h4>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getDatabaseTypes()</strong></td>
+<td>Returns the list of the available databases in this instance</td>
+<td><em>list of string</em></td>
+</tr>
+<tr>
+<td><strong>getDataSources(databaseType)</strong></td>
+<td>Returns the list of the available data-sources in this instance for the given <em>databaseType</em>. In case the <em>databaseType</em> is not present, the data-sources of the default database type are listed</td>
+<td><em>list of string</em></td>
+</tr>
+<tr>
+<td><strong>createDataSource(name, driver, url, username, password, properties)</strong></td>
+<td>Creates a named dynamic datasource based on the provided parameters</td>
+<td><em>-</em></td>
+</tr>
+<tr>
+<td><strong>getMetadata(databaseType, datasourceName)</strong></td>
+<td>Returns the metadata of the selected <em>databaseType</em> and <em>datasourceName</em>. In case the <em>datasourceName</em> parameter is omitted, then the default data-source for the selected database is taken. In case the <em>databaseType</em> is omitted, then the default data-source of the default database type is taken</td>
+<td><em>metadata object</em></td>
+</tr>
+<tr>
+<td><strong>getConnection(databaseType, datasourceName)</strong></td>
+<td>Establishes a connection to the selected data-source. Both parameters are optional</td>
+<td><em>Connection</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="objects_1">Objects</h3>
+<hr />
+<h4 id="connection_1">Connection</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>prepareStatement(sql)</strong></td>
+<td>Creates a prepared statement by the given SQL script</td>
+<td><em>Statement</em></td>
+</tr>
+<tr>
+<td><strong>close()</strong></td>
+<td>Closes the Connection and returns it to the pool</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>commit()</strong></td>
+<td>Commits the current transaction</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>getAutoCommit()</strong></td>
+<td>Returns the value of the auto commit setting</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>getCatalog()</strong></td>
+<td>Returns the Catalog name, which the Connection is related to</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getSchema()</strong></td>
+<td>Returns the Schema name, which the Connection is related to</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getTransactionIsolation()</strong></td>
+<td>Returns the value of the transaction isolation setting</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>isClosed()</strong></td>
+<td>Returns true if the Connection is already closed and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>isReadOnly()</strong></td>
+<td>Returns true if the Connection is opened in a read only state and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>isValid()</strong></td>
+<td>Returns true if the Connection is still valid and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>rollback()</strong></td>
+<td>Rolls the current transaction back</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setAutoCommit(autoCommit)</strong></td>
+<td>Sets the value of the auto commit setting</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setCatalog(catalog)</strong></td>
+<td>Sets the Catalog name, which the Connection is related to</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setSchema(schema)</strong></td>
+<td>Sets the Schema name, which the Connection is related to</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setReadOnly(readOnly)</strong></td>
+<td>Sets the value of the read only state</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setTransactionIsolation(transactionIsolation)</strong></td>
+<td>Sets the value of the transaction isolation setting</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="statement_1">Statement</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>close()</strong></td>
+<td>Closes the Statement</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>executeQuery()</strong></td>
+<td>Executes a query and returns a ResultSet</td>
+<td><em>ResultSet</em></td>
+</tr>
+<tr>
+<td><strong>executeUpdate()</strong></td>
+<td>Executes an update SQL statement</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setNull(index, value)</strong></td>
+<td>Sets a parameter as null</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setBoolean(index, value)</strong></td>
+<td>Sets a parameter of type boolean</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setDate(index, value)</strong></td>
+<td>Sets a parameter of type date</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setDouble(index, value)</strong></td>
+<td>Sets a parameter of type double</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setFloat(index, value)</strong></td>
+<td>Sets a parameter of type float</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setInt(index, value)</strong></td>
+<td>Sets a parameter of type integer</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setLong(index, value)</strong></td>
+<td>Sets a parameter of type long</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setShort(index, value)</strong></td>
+<td>Sets a parameter of type short</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setString(index, value)</strong></td>
+<td>Sets a parameter of type string</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setTime(index, value)</strong></td>
+<td>Sets a parameter of type time</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setTimestamp(index, value)</strong></td>
+<td>Sets a parameter of type timestamp</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="resultset_1">ResultSet</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>close()</strong></td>
+<td>Closes the ResultSet</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>getBoolean(identifier)</strong></td>
+<td>Returns a value of type boolean</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>getDate(identifier)</strong></td>
+<td>Returns a value of type date</td>
+<td><em>Date</em></td>
+</tr>
+<tr>
+<td><strong>getDouble(identifier)</strong></td>
+<td>Returns a value of type double</td>
+<td><em>double</em></td>
+</tr>
+<tr>
+<td><strong>getFloat(identifier)</strong></td>
+<td>Returns a value of type float</td>
+<td><em>float</em></td>
+</tr>
+<tr>
+<td><strong>getInt(identifier)</strong></td>
+<td>Returns a value of type integer</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>getLong(identifier)</strong></td>
+<td>Returns a value of type long</td>
+<td><em>long</em></td>
+</tr>
+<tr>
+<td><strong>getShort(identifier)</strong></td>
+<td>Returns a value of type short</td>
+<td><em>short</em></td>
+</tr>
+<tr>
+<td><strong>getString(identifier)</strong></td>
+<td>Returns a value of type string</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getTime(identifier)</strong></td>
+<td>Returns a value of type time</td>
+<td><em>Date</em></td>
+</tr>
+<tr>
+<td><strong>getTimestamp(identifier)</strong></td>
+<td>Returns a value of type timestamp</td>
+<td><em>Date</em></td>
+</tr>
+<tr>
+<td><strong>isAfterLast()</strong></td>
+<td>Returns true if the ResultSet is iterated at the end and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>isBeforeFirst()</strong></td>
+<td>Returns true if the ResultSet is iterated at the beginning and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>isFirst()</strong></td>
+<td>Returns true if the ResultSet is iterated at the first row and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>isLast()</strong></td>
+<td>Returns true if the ResultSet is iterated at the last row and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>isClosed()</strong></td>
+<td>Returns true if the ResultSet is already closed and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>next()</strong></td>
+<td>Iterates the ResultSet to the next row and returns true if it is successful. Returns false if no more rows remain.</td>
+<td><em>boolean</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="compatibility_1">Compatibility</h2>
+<table>
+<thead>
+<tr>
+<th>Rhino</th>
+<th>Nashorn</th>
+<th>V8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="version-2x">Version 2.x</h2>
+<ul>
+<li>Module: <strong>db/database</strong></li>
+<li>Definition: <a href="https://github.com/dirigiblelabs/core_api/issues/9">/core_api/issues/9</a></li>
+<li>Source: <a href="https://github.com/dirigiblelabs/core_api/blob/master/core_api/ScriptingServices/db/database.js">/db/database.js</a></li>
+<li>Status: <strong>beta</strong></li>
+</ul>
+<h2 id="basic-usage_2">Basic Usage</h2>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">database</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;db/database&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;net/http/response&#39;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">datasource</span> <span class="o">=</span> <span class="nx">database</span><span class="p">.</span><span class="nx">getDatasource</span><span class="p">();</span> <span class="c1">// default</span>
+<span class="c1">//var datasource = db.getNamedDatasource(&quot;name-of-the-datasource&quot;);</span>
+
+<span class="kd">var</span> <span class="nx">connection</span> <span class="o">=</span> <span class="nx">datasource</span><span class="p">.</span><span class="nx">getConnection</span><span class="p">();</span>
+<span class="k">try</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">statement</span> <span class="o">=</span> <span class="nx">connection</span><span class="p">.</span><span class="nx">prepareStatement</span><span class="p">(</span><span class="s2">&quot;select * from DGB_FILES where FILE_PATH like ?&quot;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+    <span class="nx">statement</span><span class="p">.</span><span class="nx">setString</span><span class="p">(</span><span class="o">++</span><span class="nx">i</span><span class="p">,</span> <span class="s2">&quot;%&quot;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">resultSet</span> <span class="o">=</span> <span class="nx">statement</span><span class="p">.</span><span class="nx">executeQuery</span><span class="p">();</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nx">resultSet</span><span class="p">.</span><span class="nx">next</span><span class="p">())</span> <span class="p">{</span>
+        <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;[path]: &quot;</span> <span class="o">+</span> <span class="nx">resultSet</span><span class="p">.</span><span class="nx">getString</span><span class="p">(</span><span class="s2">&quot;FILE_PATH&quot;</span><span class="p">));</span>
+    <span class="p">}</span>
+    <span class="nx">resultSet</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+    <span class="nx">statement</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+<span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">trace</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">finally</span> <span class="p">{</span>
+    <span class="nx">connection</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">flush</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</code></pre></div>
+<h2 id="definition_2">Definition</h2>
+<h3 id="functions_2">Functions</h3>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getDatasource()</strong></td>
+<td>Returns the default data source set of this instance</td>
+<td><em>Datasource</em></td>
+</tr>
+<tr>
+<td><strong>getNamedDatasource(name)</strong></td>
+<td>Returns a named data source pre-configured in this instance</td>
+<td><em>Datasource</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="objects_2">Objects</h3>
+<hr />
+<h4 id="datasource">Datasource</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getConnection()</strong></td>
+<td>Returns a connection to the data source from the pool</td>
+<td><em>Connection</em></td>
+</tr>
+<tr>
+<td><strong>getSequence(name)</strong></td>
+<td>Returns a sequence by name from this data source. Creates one, if such does not exist.</td>
+<td><em>Sequence</em></td>
+</tr>
+<tr>
+<td><strong>getPaging()</strong></td>
+<td>Returns the page script generator depending on the database dialect</td>
+<td><em>Paging</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="connection_2">Connection</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>prepareStatement(sql)</strong></td>
+<td>Creates a prepared statement by the given SQL script</td>
+<td><em>Statement</em></td>
+</tr>
+<tr>
+<td><strong>close()</strong></td>
+<td>Closes the Connection and returns it to the pool</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>commit()</strong></td>
+<td>Commits the current transaction</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>rollback()</strong></td>
+<td>Rolls the current transaction back</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>getAutoCommit()</strong></td>
+<td>Returns the value of the auto commit setting</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>getCatalog()</strong></td>
+<td>Returns the Catalog name, which the Connection is related to</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getSchema()</strong></td>
+<td>Returns the Schema name, which the Connection is related to</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getTransactionIsolation()</strong></td>
+<td>Returns the value of the transaction isolation setting</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>isClosed()</strong></td>
+<td>Returns true if the Connection is already closed and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>isReadOnly()</strong></td>
+<td>Returns true if the Connection is opened in a read only state and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>isValid()</strong></td>
+<td>Returns true if the Connection is still valid and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>setAutoCommit(autoCommit)</strong></td>
+<td>Sets the value of the auto commit setting</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setCatalog(catalog)</strong></td>
+<td>Sets the Catalog name, which the Connection is related to</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setSchema(schema)</strong></td>
+<td>Sets the Schema name, which the Connection is related to</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setReadOnly(readOnly)</strong></td>
+<td>Sets the value of the read only state</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setTransactionIsolation(transactionIsolation)</strong></td>
+<td>Sets the value of the transaction isolation setting</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="statement_2">Statement</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>close()</strong></td>
+<td>Closes the Statement</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>execute()</strong></td>
+<td>Executes a query or an update SQL statement</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>executeQuery()</strong></td>
+<td>Executes a query and returns a ResultSet</td>
+<td><em>ResultSet</em></td>
+</tr>
+<tr>
+<td><strong>executeUpdate()</strong></td>
+<td>Executes an update SQL statement</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setBoolean(index, value)</strong></td>
+<td>Sets a parameter of type boolean</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setDate(index, value)</strong></td>
+<td>Sets a parameter of type date</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setDouble(index, value)</strong></td>
+<td>Sets a parameter of type double</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setFloat(index, value)</strong></td>
+<td>Sets a parameter of type float</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setInt(index, value)</strong></td>
+<td>Sets a parameter of type integer</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setLong(index, value)</strong></td>
+<td>Sets a parameter of type long</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setShort(index, value)</strong></td>
+<td>Sets a parameter of type short</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setString(index, value)</strong></td>
+<td>Sets a parameter of type string</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setTime(index, value)</strong></td>
+<td>Sets a parameter of type time</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setTimestamp(index, value)</strong></td>
+<td>Sets a parameter of type timestamp</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="resultset_2">ResultSet</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>close()</strong></td>
+<td>Closes the ResultSet</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>getBoolean(identifier)</strong></td>
+<td>Returns a value of type boolean</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>getDate(identifier)</strong></td>
+<td>Returns a value of type date</td>
+<td><em>Date</em></td>
+</tr>
+<tr>
+<td><strong>getDouble(identifier)</strong></td>
+<td>Returns a value of type double</td>
+<td><em>double</em></td>
+</tr>
+<tr>
+<td><strong>getFloat(identifier)</strong></td>
+<td>Returns a value of type float</td>
+<td><em>float</em></td>
+</tr>
+<tr>
+<td><strong>getInt(identifier)</strong></td>
+<td>Returns a value of type integer</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>getLong(identifier)</strong></td>
+<td>Returns a value of type long</td>
+<td><em>long</em></td>
+</tr>
+<tr>
+<td><strong>getShort(identifier)</strong></td>
+<td>Returns a value of type short</td>
+<td><em>short</em></td>
+</tr>
+<tr>
+<td><strong>getString(identifier)</strong></td>
+<td>Returns a value of type string</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getTime(identifier)</strong></td>
+<td>Returns a value of type time</td>
+<td><em>Date</em></td>
+</tr>
+<tr>
+<td><strong>getTimestamp(identifier)</strong></td>
+<td>Returns a value of type timestamp</td>
+<td><em>Date</em></td>
+</tr>
+<tr>
+<td><strong>isAfterLast()</strong></td>
+<td>Returns true if the ResultSet is iterated at the end and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>isBeforeFirst()</strong></td>
+<td>Returns true if the ResultSet is iterated at the beginning and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>isFirst()</strong></td>
+<td>Returns true if the ResultSet is iterated at the first row and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>isLast()</strong></td>
+<td>Returns true if the ResultSet is iterated at the last row and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>isClosed()</strong></td>
+<td>Returns true if the ResultSet is already closed and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>next()</strong></td>
+<td>Iterates the ResultSet to the next row and returns true if it is successful. Returns false if no more rows remain.</td>
+<td><em>boolean</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="sequence">Sequence</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getName()</strong></td>
+<td>Returns the name of this Sequence</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>create(start)</strong></td>
+<td>Creates a Sequence starting by a given number</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>next()</strong></td>
+<td>Increase the value of this Sequence</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>drop()</strong></td>
+<td>Deletes the Sequence</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>exists()</strong></td>
+<td>Returns true if the Sequence already exists and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="paging">Paging</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>genLimitAndOffset(limit, offset)</strong></td>
+<td>Returns the SQL snippet for paging depending of the database dialect</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>genTopAndStart(limit, offset)</strong></td>
+<td>Returns the SQL snippet for paging depending of the database dialect</td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="compatibility_2">Compatibility</h2>
+<table>
+<thead>
+<tr>
+<th>Rhino</th>
+<th>Nashorn</th>
+<th>V8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

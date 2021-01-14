@@ -1,0 +1,2420 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>CMIS - My Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Api <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">CMIS</a>
+</li>
+                                    
+<li>
+    <a href="../console/" class="dropdown-item">Console</a>
+</li>
+                                    
+<li>
+    <a href="../log_logging/" class="dropdown-item">Logging</a>
+</li>
+                                    
+<li>
+    <a href="../security_user/" class="dropdown-item">Security User</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Bpm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../bpm/bpm_process/" class="dropdown-item">BPM Process</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../core/core_assert/" class="dropdown-item">Assert</a>
+</li>
+            
+<li>
+    <a href="../core/core_config/" class="dropdown-item">Config</a>
+</li>
+            
+<li>
+    <a href="../core/core_configurations/" class="dropdown-item">Configurations</a>
+</li>
+            
+<li>
+    <a href="../core/core_context/" class="dropdown-item">Context</a>
+</li>
+            
+<li>
+    <a href="../core/core_destinations/" class="dropdown-item">Destinations</a>
+</li>
+            
+<li>
+    <a href="../core/core_env/" class="dropdown-item">Env</a>
+</li>
+            
+<li>
+    <a href="../core/core_extensions/" class="dropdown-item">Extensions</a>
+</li>
+            
+<li>
+    <a href="../core/core_globals/" class="dropdown-item">Globals</a>
+</li>
+            
+<li>
+    <a href="../core/core_java/" class="dropdown-item">Java</a>
+</li>
+            
+<li>
+    <a href="../core/core_template-engine/" class="dropdown-item">Template Engine</a>
+</li>
+            
+<li>
+    <a href="../core/core_threads/" class="dropdown-item">Thread</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Database</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../database/database/" class="dropdown-item">Database</a>
+</li>
+            
+<li>
+    <a href="../database/database_dao/" class="dropdown-item">Database DAO</a>
+</li>
+            
+<li>
+    <a href="../database/database_query/" class="dropdown-item">Database Query</a>
+</li>
+            
+<li>
+    <a href="../database/database_sequence/" class="dropdown-item">Database Sequence</a>
+</li>
+            
+<li>
+    <a href="../database/database_sql/" class="dropdown-item">Database SQL</a>
+</li>
+            
+<li>
+    <a href="../database/database_update/" class="dropdown-item">Database Update</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Http</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../http/client-async/" class="dropdown-item">Client Async</a>
+</li>
+            
+<li>
+    <a href="../http/client/" class="dropdown-item">HTTP Client</a>
+</li>
+            
+<li>
+    <a href="../http/request/" class="dropdown-item">Request</a>
+</li>
+            
+<li>
+    <a href="../http/response/" class="dropdown-item">Response</a>
+</li>
+            
+<li>
+    <a href="../http/rs-data/" class="dropdown-item">RS-Data</a>
+</li>
+            
+<li>
+    <a href="../http/rs/" class="dropdown-item">RS</a>
+</li>
+            
+<li>
+    <a href="../http/session/" class="dropdown-item">Session</a>
+</li>
+            
+<li>
+    <a href="../http/upload/" class="dropdown-item">Upload</a>
+</li>
+            
+<li>
+    <a href="../http/user/" class="dropdown-item">User</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Indexing</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../indexing/indexing/" class="dropdown-item">Indexing</a>
+</li>
+            
+<li>
+    <a href="../indexing/indexing_searcher/" class="dropdown-item">Indexing Searcher</a>
+</li>
+            
+<li>
+    <a href="../indexing/indexing_writer/" class="dropdown-item">Indexing Writer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Io</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../io/io_bytes/" class="dropdown-item">Bytes</a>
+</li>
+            
+<li>
+    <a href="../io/io_files/" class="dropdown-item">Files</a>
+</li>
+            
+<li>
+    <a href="../io/io_ftp/" class="dropdown-item">FTP Client</a>
+</li>
+            
+<li>
+    <a href="../io/io_streams/" class="dropdown-item">Streams</a>
+</li>
+            
+<li>
+    <a href="../io/io_zip/" class="dropdown-item">Zip</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Kafka</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../kafka/kafka_consumer/" class="dropdown-item">Kafka Consumer</a>
+</li>
+            
+<li>
+    <a href="../kafka/kafka_producer/" class="dropdown-item">Kafka Producer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Mail</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../mail/mail/" class="dropdown-item">Mail</a>
+</li>
+            
+<li>
+    <a href="../mail/mail_client/" class="dropdown-item">Mail</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Messaging</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../messaging/messaging/" class="dropdown-item">Messaging</a>
+</li>
+            
+<li>
+    <a href="../messaging/messaging_consumer/" class="dropdown-item">Message Consumer</a>
+</li>
+            
+<li>
+    <a href="../messaging/messaging_producer/" class="dropdown-item">Message Producer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Mongodb</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../mongodb/mongodb_client/" class="dropdown-item">MongoDB Client API</a>
+</li>
+            
+<li>
+    <a href="../mongodb/mongodb_dao/" class="dropdown-item">MongoDB DAO API</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Net</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../net/net_soap/" class="dropdown-item">SOAP</a>
+</li>
+            
+<li>
+    <a href="../net/net_websocket/" class="dropdown-item">Websocket</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Platform</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../platform/platform_engines/" class="dropdown-item">Engines</a>
+</li>
+            
+<li>
+    <a href="../platform/platform_lifecycle/" class="dropdown-item">Lifecycle</a>
+</li>
+            
+<li>
+    <a href="../platform/platform_registry/" class="dropdown-item">Registry</a>
+</li>
+            
+<li>
+    <a href="../platform/platform_repository/" class="dropdown-item">Repository</a>
+</li>
+            
+<li>
+    <a href="../platform/platform_template-engines/" class="dropdown-item">Template Engines</a>
+</li>
+            
+<li>
+    <a href="../platform/platform_workspace/" class="dropdown-item">Workspace</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Repository</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../repository/repository/" class="dropdown-item">Repository</a>
+</li>
+            
+<li>
+    <a href="../repository/repository_content/" class="dropdown-item">Repository Content</a>
+</li>
+            
+<li>
+    <a href="../repository/repository_manager/" class="dropdown-item">Repository Manager</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../utils/utils_base64/" class="dropdown-item">Base64</a>
+</li>
+            
+<li>
+    <a href="../utils/utils_digest/" class="dropdown-item">Digest</a>
+</li>
+            
+<li>
+    <a href="../utils/utils_error/" class="dropdown-item">Error</a>
+</li>
+            
+<li>
+    <a href="../utils/utils_escape/" class="dropdown-item">Escape Utils</a>
+</li>
+            
+<li>
+    <a href="../utils/utils_hex/" class="dropdown-item">Hex</a>
+</li>
+            
+<li>
+    <a href="../utils/utils_url/" class="dropdown-item">Url</a>
+</li>
+            
+<li>
+    <a href="../utils/utils_uuid/" class="dropdown-item">UUID</a>
+</li>
+            
+<li>
+    <a href="../utils/utils_xml/" class="dropdown-item">XML</a>
+</li>
+            
+<li>
+    <a href="../utils/utils_xss/" class="dropdown-item">XSS</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../.." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../console/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#pagetitle" class="nav-link">{{ page.title }}</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#version-4x" class="nav-link">Version 4.x</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#version-3x" class="nav-link">Version 3.x</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#version-2x" class="nav-link">Version 2.x</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="pagetitle">{{ page.title }}</h1>
+<p>CMIS object is used for access of the underlying Content Management System (CMS) with <a href="http://docs.oasis-open.org/cmis/CMIS/v1.1/CMIS-v1.1.html">CMIS API</a>.</p>
+<h2 id="version-4x">Version 4.x</h2>
+<ul>
+<li>Module: <strong>cms/v4/cmis</strong></li>
+<li>Alias: <strong>cms/cmis</strong></li>
+<li>Definition: <a href="https://github.com/eclipse/dirigible/issues/178">https://github.com/eclipse/dirigible/issues/178</a></li>
+<li>Source: <a href="https://github.com/dirigiblelabs/api-cms/blob/master/cms/v4/cmis.js">/cms/v4/cmis.js</a></li>
+<li>Facade: <a href="https://github.com/eclipse/dirigible/blob/master/api/api-facade/api-cms/src/main/java/org/eclipse/dirigible/api/v3/cms/CmisFacade.java">CmisFacade</a></li>
+<li>Status: <strong>stable</strong></li>
+</ul>
+<h3 id="basic-usage">Basic Usage</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">cmis</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;cms/v4/cmis&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;http/v4/response&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">streams</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;io/v4/streams&quot;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">cmisSession</span> <span class="o">=</span> <span class="nx">cmis</span><span class="p">.</span><span class="nx">getSession</span><span class="p">();</span>
+
+<span class="kd">var</span> <span class="nx">rootFolder</span> <span class="o">=</span> <span class="nx">cmisSession</span><span class="p">.</span><span class="nx">getRootFolder</span><span class="p">();</span>
+
+<span class="kd">var</span> <span class="nx">children</span> <span class="o">=</span> <span class="nx">rootFolder</span><span class="p">.</span><span class="nx">getChildren</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Listing the children of the root folder:&quot;</span><span class="p">);</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">children</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Object ID: &quot;</span> <span class="o">+</span> <span class="nx">children</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getId</span><span class="p">());</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Object Name: &quot;</span> <span class="o">+</span> <span class="nx">children</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getName</span><span class="p">());</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">textFileName</span> <span class="o">=</span> <span class="s2">&quot;test.txt&quot;</span><span class="p">;</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Creating a simple text file, &quot;</span> <span class="o">+</span> <span class="nx">textFileName</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">mimetype</span> <span class="o">=</span> <span class="s2">&quot;text/plain; charset=UTF-8&quot;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="s2">&quot;This is some test content.&quot;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">filename</span> <span class="o">=</span> <span class="nx">textFileName</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">outputStream</span> <span class="o">=</span> <span class="nx">streams</span><span class="p">.</span><span class="nx">createByteArrayOutputStream</span><span class="p">();</span>
+<span class="nx">outputStream</span><span class="p">.</span><span class="nx">writeText</span><span class="p">(</span><span class="nx">content</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">bytes</span> <span class="o">=</span> <span class="nx">outputStream</span><span class="p">.</span><span class="nx">getBytes</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">inputStream</span> <span class="o">=</span> <span class="nx">streams</span><span class="p">.</span><span class="nx">createByteArrayInputStream</span><span class="p">(</span><span class="nx">bytes</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">contentStream</span> <span class="o">=</span> <span class="nx">cmisSession</span><span class="p">.</span><span class="nx">getObjectFactory</span><span class="p">().</span><span class="nx">createContentStream</span><span class="p">(</span><span class="nx">filename</span><span class="p">,</span> <span class="nx">bytes</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span> <span class="nx">mimetype</span><span class="p">,</span> <span class="nx">inputStream</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">properties</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">properties</span><span class="p">[</span><span class="nx">cmis</span><span class="p">.</span><span class="nx">OBJECT_TYPE_ID</span><span class="p">]</span> <span class="o">=</span> <span class="nx">cmis</span><span class="p">.</span><span class="nx">OBJECT_TYPE_DOCUMENT</span><span class="p">;</span>
+<span class="nx">properties</span><span class="p">[</span><span class="nx">cmis</span><span class="p">.</span><span class="nx">NAME</span><span class="p">]</span> <span class="o">=</span> <span class="nx">filename</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">newDocument</span><span class="p">;</span>
+<span class="k">try</span> <span class="p">{</span>
+    <span class="nx">newDocument</span> <span class="o">=</span> <span class="nx">rootFolder</span><span class="p">.</span><span class="nx">createDocument</span><span class="p">(</span><span class="nx">properties</span><span class="p">,</span> <span class="nx">contentStream</span><span class="p">,</span> <span class="nx">cmis</span><span class="p">.</span><span class="nx">VERSIONING_STATE_MAJOR</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Error: &quot;</span> <span class="o">+</span> <span class="nx">e</span><span class="p">);</span>    
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">documentId</span> <span class="o">=</span> <span class="nx">newDocument</span><span class="p">.</span><span class="nx">getId</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Document ID: &quot;</span> <span class="o">+</span> <span class="nx">documentId</span><span class="p">);</span>
+
+<span class="nx">children</span> <span class="o">=</span> <span class="nx">rootFolder</span><span class="p">.</span><span class="nx">getChildren</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Listing the children of the root folder again:&quot;</span><span class="p">);</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">children</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Object ID: &quot;</span> <span class="o">+</span> <span class="nx">children</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getId</span><span class="p">());</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Object Name: &quot;</span> <span class="o">+</span> <span class="nx">children</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getName</span><span class="p">());</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Object Type: &quot;</span> <span class="o">+</span> <span class="nx">children</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getType</span><span class="p">());</span>
+<span class="p">}</span>
+
+<span class="c1">// Get the contents of the file</span>
+<span class="kd">var</span> <span class="nx">doc</span> <span class="o">=</span> <span class="nx">cmisSession</span><span class="p">.</span><span class="nx">getObject</span><span class="p">(</span><span class="nx">documentId</span><span class="p">);</span>
+<span class="nx">contentStream</span> <span class="o">=</span> <span class="nx">doc</span><span class="p">.</span><span class="nx">getContentStream</span><span class="p">();</span> <span class="c1">// returns null if the document has no content</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">contentStream</span> <span class="o">!==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">content</span> <span class="o">=</span> <span class="nx">contentStream</span><span class="p">.</span><span class="nx">getStream</span><span class="p">().</span><span class="nx">readText</span><span class="p">();</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Contents of &quot;</span> <span class="o">+</span> <span class="nx">filename</span> <span class="o">+</span> <span class="s2">&quot; are: &quot;</span> <span class="o">+</span> <span class="nx">content</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;No content.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Deleting the newly created document&quot;</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">newDocument</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">newDocument</span><span class="p">.</span><span class="k">delete</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">flush</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="definition">Definition</h3>
+<h4 id="functions">Functions</h4>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getSession()</strong></td>
+<td>Returns the CMIS connection session to the CMS system</td>
+<td><em>Session</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="objects">Objects</h4>
+<hr />
+<h5 id="session">Session</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getRepositoryInfo()</strong></td>
+<td>Returns the information about the CMIS repository</td>
+<td><em>RepositoryInfo</em></td>
+</tr>
+<tr>
+<td><strong>getObjectFactory()</strong></td>
+<td>Returns the ObjectFactory utility</td>
+<td><em>ObjectFactory</em></td>
+</tr>
+<tr>
+<td><strong>getRootFolder()</strong></td>
+<td>Returns the root folder of this repository</td>
+<td><em>Folder</em></td>
+</tr>
+<tr>
+<td><strong>getObject()</strong></td>
+<td>Returns a CMIS Object by name</td>
+<td><em>CmisObject</em></td>
+</tr>
+<tr>
+<td><strong>getObjectByPath()</strong></td>
+<td>Returns a CMIS Object by path</td>
+<td><em>CmisObject</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="repositoryinfo">RepositoryInfo</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getId()</strong></td>
+<td>Returns the ID of the CMIS repository</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getName()</strong></td>
+<td>Returns the Name of the CMIS repository</td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="objectfactory">ObjectFactory</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>createContentStream()</strong></td>
+<td>Returns a newly created ContentStream object</td>
+<td><em>ContentStream</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="contentstream">ContentStream</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getStream()</strong></td>
+<td>Returns the InputStream of this ContentStream object</td>
+<td><em>streams.InputStream</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="cmisobject">CmisObject</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getId()</strong></td>
+<td>Returns the ID of this CmisObject</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getName()</strong></td>
+<td>Returns the Name of this CmisObject</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getType()</strong></td>
+<td>Returns the Type of this CmisObject</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>delete()</strong></td>
+<td>Deletes this CmisObject</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>rename(newName)</strong></td>
+<td>Renames this CmisObject</td>
+<td><em>-</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="folder">Folder</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getId()</strong></td>
+<td>Returns the ID of this Folder</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getName()</strong></td>
+<td>Returns the Name of this Folder</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getPath()</strong></td>
+<td>Returns the Path of this Folder</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>createFolder(properties)</strong></td>
+<td>Creates a new folder under this Folder</td>
+<td><em>Folder</em></td>
+</tr>
+<tr>
+<td><strong>createDocument(properties, contentStream, versioningState)</strong></td>
+<td>Creates a new document under this Folder</td>
+<td><em>Document</em></td>
+</tr>
+<tr>
+<td><strong>getChildren()</strong></td>
+<td>Returns an array of CmisObject sub-elements of this Folder</td>
+<td><em>array of CmisObject</em></td>
+</tr>
+<tr>
+<td><strong>isRootFolder()</strong></td>
+<td>Returns true if this Folder is a root folder and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>getFolderParent()</strong></td>
+<td>Returns the parent Folder of this Folder</td>
+<td><em>Folder</em></td>
+</tr>
+<tr>
+<td><strong>delete()</strong></td>
+<td>Deletes this Folder</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>rename(newName)</strong></td>
+<td>Renames this Folder</td>
+<td><em>-</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="document">Document</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getId()</strong></td>
+<td>Returns the ID of this Document</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getName()</strong></td>
+<td>Returns the Name of this Document</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>delete()</strong></td>
+<td>Deletes this Document</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getContentStream()</strong></td>
+<td>Returns the ContentStream representing the contents of this Document</td>
+<td><em>ContentStream</em></td>
+</tr>
+<tr>
+<td><strong>rename(newName)</strong></td>
+<td>Renames this Document</td>
+<td><em>-</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="constants">Constants</h4>
+<hr />
+<h5 id="base">Base</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>NAME</strong></td>
+<td>Value is <em>cmis:name</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_ID</strong></td>
+<td>Value is <em>cmis:objectId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_TYPE_ID</strong></td>
+<td>Value is <em>cmis:objectTypeId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>BASE_TYPE_ID</strong></td>
+<td>Value is <em>cmis:baseTypeId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CREATED_BY</strong></td>
+<td>Value is <em>cmis:createdBy</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CREATION_DATE</strong></td>
+<td>Value is <em>cmis:creationDate</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>LAST_MODIFIED_BY</strong></td>
+<td>Value is <em>cmis:lastModifiedBy</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>LAST_MODIFICATION_DATE</strong></td>
+<td>Value is <em>cmis:lastModificationDate</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CHANGE_TOKEN</strong></td>
+<td>Value is <em>mis:changeToken</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="document_1">Document</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IS_IMMUTABLE</strong></td>
+<td>Value is <em>cmis:isImmutable</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>IS_LATEST_VERSION</strong></td>
+<td>Value is <em>cmis:isLatestVersion</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>IS_MAJOR_VERSION</strong></td>
+<td>Value is <em>cmis:isMajorVersion</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>IS_LATEST_MAJOR_VERSION</strong></td>
+<td>Value is <em>cmis:isLatestMajorVersion</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSION_LABEL</strong></td>
+<td>Value is <em>cmis:versionLabel</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSION_SERIES_ID</strong></td>
+<td>Value is <em>ccmis:versionSeriesId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>IS_VERSION_SERIES_CHECKED_OUT</strong></td>
+<td>Value is <em>cmis:isVersionSeriesCheckedOut</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSION_SERIES_CHECKED_OUT_BY</strong></td>
+<td>Value is <em>cmis:versionSeriesCheckedOutBy</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSION_SERIES_CHECKED_OUT_ID</strong></td>
+<td>Value is <em>cmis:versionSeriesCheckedOutId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CHECKIN_COMMENT</strong></td>
+<td>Value is <em>cmis:checkinComment</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CONTENT_STREAM_LENGTH</strong></td>
+<td>Value is <em>cmis:contentStreamLength</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CONTENT_STREAM_MIME_TYPE</strong></td>
+<td>Value is <em>cmis:contentStreamMimeType</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CONTENT_STREAM_FILE_NAME</strong></td>
+<td>Value is <em>cmis:contentStreamFileName</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CONTENT_STREAM_ID</strong></td>
+<td>Value is <em>cmis:contentStreamId</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="folder_1">Folder</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PARENT_ID</strong></td>
+<td>Value is <em>cmis:parentId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>ALLOWED_CHILD_OBJECT_TYPE_IDS</strong></td>
+<td>Value is <em>cmis:allowedChildObjectTypeIds</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>PATH</strong></td>
+<td>Value is <em>cmis:path</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="relationship">Relationship</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SOURCE_ID</strong></td>
+<td>Value is <em>cmis:sourceId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>TARGET_ID</strong></td>
+<td>Value is <em>cmis:targetId</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="relationship_1">Relationship</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>POLICY_TEXT</strong></td>
+<td>Value is <em>cmis:policyText</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="versioning-states">Versioning States</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VERSIONING_STATE_NONE</strong></td>
+<td>Value is <em>none</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSIONING_STATE_MAJOR</strong></td>
+<td>Value is <em>major</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSIONING_STATE_MINOR</strong></td>
+<td>Value is <em>minor</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSIONING_STATE_CHECKEDOUT</strong></td>
+<td>Value is <em>checkedout</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="object-types">Object Types</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OBJECT_TYPE_DOCUMENT</strong></td>
+<td>Value is <em>cmis:document</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_TYPE_FOLDER</strong></td>
+<td>Value is <em>cmis:folder</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_TYPE_RELATIONSHIP</strong></td>
+<td>Value is <em>cmis:relationship</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_TYPE_POLICY</strong></td>
+<td>Value is <em>cmis:policy</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_TYPE_ITEM</strong></td>
+<td>Value is <em>cmis:item</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_TYPE_SECONDARY</strong></td>
+<td>Value is <em>cmis:secondary</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="compatibility">Compatibility</h3>
+<table>
+<thead>
+<tr>
+<th>Rhino</th>
+<th>Nashorn</th>
+<th>V8</th>
+<th>Graal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="version-3x">Version 3.x</h2>
+<ul>
+<li>Module: <strong>cms/v3/cmis</strong></li>
+<li>Alias: <strong>cms/cmis</strong></li>
+<li>Definition: <a href="https://github.com/eclipse/dirigible/issues/178">https://github.com/eclipse/dirigible/issues/178</a></li>
+<li>Source: <a href="https://github.com/dirigiblelabs/api-cms/blob/master/cms/v3/cmis.js">/cms/v3/cmis.js</a></li>
+<li>Facade: <a href="https://github.com/eclipse/dirigible/blob/master/api/api-facade/api-cms/src/main/java/org/eclipse/dirigible/api/v3/cms/CmisFacade.java">CmisFacade</a></li>
+<li>Status: <strong>alpha</strong></li>
+</ul>
+<h3 id="basic-usage_1">Basic Usage</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">cmis</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;cms/v3/cmis&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;http/v3/response&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">streams</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;io/v3/streams&quot;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">cmisSession</span> <span class="o">=</span> <span class="nx">cmis</span><span class="p">.</span><span class="nx">getSession</span><span class="p">();</span>
+
+<span class="kd">var</span> <span class="nx">rootFolder</span> <span class="o">=</span> <span class="nx">cmisSession</span><span class="p">.</span><span class="nx">getRootFolder</span><span class="p">();</span>
+
+<span class="kd">var</span> <span class="nx">children</span> <span class="o">=</span> <span class="nx">rootFolder</span><span class="p">.</span><span class="nx">getChildren</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Listing the children of the root folder:&quot;</span><span class="p">);</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">children</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Object ID: &quot;</span> <span class="o">+</span> <span class="nx">children</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getId</span><span class="p">());</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Object Name: &quot;</span> <span class="o">+</span> <span class="nx">children</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getName</span><span class="p">());</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">textFileName</span> <span class="o">=</span> <span class="s2">&quot;test.txt&quot;</span><span class="p">;</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Creating a simple text file, &quot;</span> <span class="o">+</span> <span class="nx">textFileName</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">mimetype</span> <span class="o">=</span> <span class="s2">&quot;text/plain; charset=UTF-8&quot;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="s2">&quot;This is some test content.&quot;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">filename</span> <span class="o">=</span> <span class="nx">textFileName</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">outputStream</span> <span class="o">=</span> <span class="nx">streams</span><span class="p">.</span><span class="nx">createByteArrayOutputStream</span><span class="p">();</span>
+<span class="nx">outputStream</span><span class="p">.</span><span class="nx">writeText</span><span class="p">(</span><span class="nx">content</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">bytes</span> <span class="o">=</span> <span class="nx">outputStream</span><span class="p">.</span><span class="nx">getBytes</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">inputStream</span> <span class="o">=</span> <span class="nx">streams</span><span class="p">.</span><span class="nx">createByteArrayInputStream</span><span class="p">(</span><span class="nx">bytes</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">contentStream</span> <span class="o">=</span> <span class="nx">cmisSession</span><span class="p">.</span><span class="nx">getObjectFactory</span><span class="p">().</span><span class="nx">createContentStream</span><span class="p">(</span><span class="nx">filename</span><span class="p">,</span> <span class="nx">bytes</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span> <span class="nx">mimetype</span><span class="p">,</span> <span class="nx">inputStream</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">properties</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">properties</span><span class="p">[</span><span class="nx">cmis</span><span class="p">.</span><span class="nx">OBJECT_TYPE_ID</span><span class="p">]</span> <span class="o">=</span> <span class="nx">cmis</span><span class="p">.</span><span class="nx">OBJECT_TYPE_DOCUMENT</span><span class="p">;</span>
+<span class="nx">properties</span><span class="p">[</span><span class="nx">cmis</span><span class="p">.</span><span class="nx">NAME</span><span class="p">]</span> <span class="o">=</span> <span class="nx">filename</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">newDocument</span><span class="p">;</span>
+<span class="k">try</span> <span class="p">{</span>
+    <span class="nx">newDocument</span> <span class="o">=</span> <span class="nx">rootFolder</span><span class="p">.</span><span class="nx">createDocument</span><span class="p">(</span><span class="nx">properties</span><span class="p">,</span> <span class="nx">contentStream</span><span class="p">,</span> <span class="nx">cmis</span><span class="p">.</span><span class="nx">VERSIONING_STATE_MAJOR</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Error: &quot;</span> <span class="o">+</span> <span class="nx">e</span><span class="p">);</span>    
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">documentId</span> <span class="o">=</span> <span class="nx">newDocument</span><span class="p">.</span><span class="nx">getId</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Document ID: &quot;</span> <span class="o">+</span> <span class="nx">documentId</span><span class="p">);</span>
+
+<span class="nx">children</span> <span class="o">=</span> <span class="nx">rootFolder</span><span class="p">.</span><span class="nx">getChildren</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Listing the children of the root folder again:&quot;</span><span class="p">);</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">children</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Object ID: &quot;</span> <span class="o">+</span> <span class="nx">children</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getId</span><span class="p">());</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Object Name: &quot;</span> <span class="o">+</span> <span class="nx">children</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getName</span><span class="p">());</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Object Type: &quot;</span> <span class="o">+</span> <span class="nx">children</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getType</span><span class="p">());</span>
+<span class="p">}</span>
+
+<span class="c1">// Get the contents of the file</span>
+<span class="kd">var</span> <span class="nx">doc</span> <span class="o">=</span> <span class="nx">cmisSession</span><span class="p">.</span><span class="nx">getObject</span><span class="p">(</span><span class="nx">documentId</span><span class="p">);</span>
+<span class="nx">contentStream</span> <span class="o">=</span> <span class="nx">doc</span><span class="p">.</span><span class="nx">getContentStream</span><span class="p">();</span> <span class="c1">// returns null if the document has no content</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">contentStream</span> <span class="o">!==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">content</span> <span class="o">=</span> <span class="nx">contentStream</span><span class="p">.</span><span class="nx">getStream</span><span class="p">().</span><span class="nx">readText</span><span class="p">();</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Contents of &quot;</span> <span class="o">+</span> <span class="nx">filename</span> <span class="o">+</span> <span class="s2">&quot; are: &quot;</span> <span class="o">+</span> <span class="nx">content</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;No content.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Deleting the newly created document&quot;</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">newDocument</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">newDocument</span><span class="p">.</span><span class="k">delete</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">flush</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="definition_1">Definition</h3>
+<h4 id="functions_1">Functions</h4>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getSession()</strong></td>
+<td>Returns the CMIS connection session to the CMS system</td>
+<td><em>Session</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="objects_1">Objects</h4>
+<hr />
+<h5 id="session_1">Session</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getRepositoryInfo()</strong></td>
+<td>Returns the information about the CMIS repository</td>
+<td><em>RepositoryInfo</em></td>
+</tr>
+<tr>
+<td><strong>getObjectFactory()</strong></td>
+<td>Returns the ObjectFactory utility</td>
+<td><em>ObjectFactory</em></td>
+</tr>
+<tr>
+<td><strong>getRootFolder()</strong></td>
+<td>Returns the root folder of this repository</td>
+<td><em>Folder</em></td>
+</tr>
+<tr>
+<td><strong>getObject()</strong></td>
+<td>Returns a CMIS Object by name</td>
+<td><em>CmisObject</em></td>
+</tr>
+<tr>
+<td><strong>getObjectByPath()</strong></td>
+<td>Returns a CMIS Object by path</td>
+<td><em>CmisObject</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="repositoryinfo_1">RepositoryInfo</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getId()</strong></td>
+<td>Returns the ID of the CMIS repository</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getName()</strong></td>
+<td>Returns the Name of the CMIS repository</td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="objectfactory_1">ObjectFactory</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>createContentStream()</strong></td>
+<td>Returns a newly created ContentStream object</td>
+<td><em>ContentStream</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="contentstream_1">ContentStream</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getStream()</strong></td>
+<td>Returns the InputStream of this ContentStream object</td>
+<td><em>streams.InputStream</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="cmisobject_1">CmisObject</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getId()</strong></td>
+<td>Returns the ID of this CmisObject</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getName()</strong></td>
+<td>Returns the Name of this CmisObject</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getType()</strong></td>
+<td>Returns the Type of this CmisObject</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>delete()</strong></td>
+<td>Deletes this CmisObject</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>rename(newName)</strong></td>
+<td>Renames this CmisObject</td>
+<td><em>-</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="folder_2">Folder</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getId()</strong></td>
+<td>Returns the ID of this Folder</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getName()</strong></td>
+<td>Returns the Name of this Folder</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getPath()</strong></td>
+<td>Returns the Path of this Folder</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>createFolder(properties)</strong></td>
+<td>Creates a new folder under this Folder</td>
+<td><em>Folder</em></td>
+</tr>
+<tr>
+<td><strong>createDocument(properties, contentStream, versioningState)</strong></td>
+<td>Creates a new document under this Folder</td>
+<td><em>Document</em></td>
+</tr>
+<tr>
+<td><strong>getChildren()</strong></td>
+<td>Returns an array of CmisObject sub-elements of this Folder</td>
+<td><em>array of CmisObject</em></td>
+</tr>
+<tr>
+<td><strong>isRootFolder()</strong></td>
+<td>Returns true if this Folder is a root folder and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>getFolderParent()</strong></td>
+<td>Returns the parent Folder of this Folder</td>
+<td><em>Folder</em></td>
+</tr>
+<tr>
+<td><strong>delete()</strong></td>
+<td>Deletes this Folder</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>rename(newName)</strong></td>
+<td>Renames this Folder</td>
+<td><em>-</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="document_2">Document</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getId()</strong></td>
+<td>Returns the ID of this Document</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getName()</strong></td>
+<td>Returns the Name of this Document</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>delete()</strong></td>
+<td>Deletes this Document</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getContentStream()</strong></td>
+<td>Returns the ContentStream representing the contents of this Document</td>
+<td><em>ContentStream</em></td>
+</tr>
+<tr>
+<td><strong>rename(newName)</strong></td>
+<td>Renames this Document</td>
+<td><em>-</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="constants_1">Constants</h4>
+<hr />
+<h5 id="base_1">Base</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>NAME</strong></td>
+<td>Value is <em>cmis:name</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_ID</strong></td>
+<td>Value is <em>cmis:objectId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_TYPE_ID</strong></td>
+<td>Value is <em>cmis:objectTypeId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>BASE_TYPE_ID</strong></td>
+<td>Value is <em>cmis:baseTypeId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CREATED_BY</strong></td>
+<td>Value is <em>cmis:createdBy</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CREATION_DATE</strong></td>
+<td>Value is <em>cmis:creationDate</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>LAST_MODIFIED_BY</strong></td>
+<td>Value is <em>cmis:lastModifiedBy</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>LAST_MODIFICATION_DATE</strong></td>
+<td>Value is <em>cmis:lastModificationDate</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CHANGE_TOKEN</strong></td>
+<td>Value is <em>mis:changeToken</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="document_3">Document</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IS_IMMUTABLE</strong></td>
+<td>Value is <em>cmis:isImmutable</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>IS_LATEST_VERSION</strong></td>
+<td>Value is <em>cmis:isLatestVersion</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>IS_MAJOR_VERSION</strong></td>
+<td>Value is <em>cmis:isMajorVersion</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>IS_LATEST_MAJOR_VERSION</strong></td>
+<td>Value is <em>cmis:isLatestMajorVersion</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSION_LABEL</strong></td>
+<td>Value is <em>cmis:versionLabel</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSION_SERIES_ID</strong></td>
+<td>Value is <em>ccmis:versionSeriesId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>IS_VERSION_SERIES_CHECKED_OUT</strong></td>
+<td>Value is <em>cmis:isVersionSeriesCheckedOut</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSION_SERIES_CHECKED_OUT_BY</strong></td>
+<td>Value is <em>cmis:versionSeriesCheckedOutBy</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSION_SERIES_CHECKED_OUT_ID</strong></td>
+<td>Value is <em>cmis:versionSeriesCheckedOutId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CHECKIN_COMMENT</strong></td>
+<td>Value is <em>cmis:checkinComment</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CONTENT_STREAM_LENGTH</strong></td>
+<td>Value is <em>cmis:contentStreamLength</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CONTENT_STREAM_MIME_TYPE</strong></td>
+<td>Value is <em>cmis:contentStreamMimeType</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CONTENT_STREAM_FILE_NAME</strong></td>
+<td>Value is <em>cmis:contentStreamFileName</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CONTENT_STREAM_ID</strong></td>
+<td>Value is <em>cmis:contentStreamId</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="folder_3">Folder</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PARENT_ID</strong></td>
+<td>Value is <em>cmis:parentId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>ALLOWED_CHILD_OBJECT_TYPE_IDS</strong></td>
+<td>Value is <em>cmis:allowedChildObjectTypeIds</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>PATH</strong></td>
+<td>Value is <em>cmis:path</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="relationship_2">Relationship</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SOURCE_ID</strong></td>
+<td>Value is <em>cmis:sourceId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>TARGET_ID</strong></td>
+<td>Value is <em>cmis:targetId</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="relationship_3">Relationship</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>POLICY_TEXT</strong></td>
+<td>Value is <em>cmis:policyText</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="versioning-states_1">Versioning States</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VERSIONING_STATE_NONE</strong></td>
+<td>Value is <em>none</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSIONING_STATE_MAJOR</strong></td>
+<td>Value is <em>major</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSIONING_STATE_MINOR</strong></td>
+<td>Value is <em>minor</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSIONING_STATE_CHECKEDOUT</strong></td>
+<td>Value is <em>checkedout</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="object-types_1">Object Types</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OBJECT_TYPE_DOCUMENT</strong></td>
+<td>Value is <em>cmis:document</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_TYPE_FOLDER</strong></td>
+<td>Value is <em>cmis:folder</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_TYPE_RELATIONSHIP</strong></td>
+<td>Value is <em>cmis:relationship</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_TYPE_POLICY</strong></td>
+<td>Value is <em>cmis:policy</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_TYPE_ITEM</strong></td>
+<td>Value is <em>cmis:item</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_TYPE_SECONDARY</strong></td>
+<td>Value is <em>cmis:secondary</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="compatibility_1">Compatibility</h3>
+<table>
+<thead>
+<tr>
+<th>Rhino</th>
+<th>Nashorn</th>
+<th>V8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="version-2x">Version 2.x</h2>
+<ul>
+<li>Module: <strong>doc/cmis</strong></li>
+<li>Definition: <a href="https://github.com/dirigiblelabs/core_api/issues/42">/core_api/issues/42</a></li>
+<li>Source: <a href="https://github.com/dirigiblelabs/core_api/blob/master/core_api/ScriptingServices/doc/cmis.js">/doc/cmis.js</a></li>
+<li>Status: <strong>beta</strong></li>
+</ul>
+<h3 id="basic-usage_2">Basic Usage</h3>
+<div class="highlight"><pre><span></span><code><span class="cm">/* globals $ */</span>
+<span class="cm">/* eslint-env node, dirigible */</span>
+
+<span class="kd">var</span> <span class="nx">cmis</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;doc/cmis&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;net/http/response&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">streams</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;io/streams&#39;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">cmisSession</span> <span class="o">=</span> <span class="nx">cmis</span><span class="p">.</span><span class="nx">getSession</span><span class="p">();</span>
+
+<span class="kd">var</span> <span class="nx">rootFolder</span> <span class="o">=</span> <span class="nx">cmisSession</span><span class="p">.</span><span class="nx">getRootFolder</span><span class="p">();</span>
+
+<span class="kd">var</span> <span class="nx">children</span> <span class="o">=</span> <span class="nx">rootFolder</span><span class="p">.</span><span class="nx">getChildren</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Listing the children of the root folder:&quot;</span><span class="p">);</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">children</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Object ID: &quot;</span> <span class="o">+</span> <span class="nx">children</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getId</span><span class="p">());</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Object Name: &quot;</span> <span class="o">+</span> <span class="nx">children</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getName</span><span class="p">());</span>
+<span class="p">}</span>
+
+
+<span class="kd">var</span> <span class="nx">textFileName</span> <span class="o">=</span> <span class="s2">&quot;test.txt&quot;</span><span class="p">;</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Creating a simple text file, &quot;</span> <span class="o">+</span> <span class="nx">textFileName</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">mimetype</span> <span class="o">=</span> <span class="s2">&quot;text/plain; charset=UTF-8&quot;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="s2">&quot;This is some test content.&quot;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">filename</span> <span class="o">=</span> <span class="nx">textFileName</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">outputStream</span> <span class="o">=</span> <span class="nx">streams</span><span class="p">.</span><span class="nx">createByteArrayOutputStream</span><span class="p">();</span>
+<span class="nx">streams</span><span class="p">.</span><span class="nx">writeText</span><span class="p">(</span><span class="nx">outputStream</span><span class="p">,</span> <span class="nx">content</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">bytes</span> <span class="o">=</span> <span class="nx">outputStream</span><span class="p">.</span><span class="nx">getBytes</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">inputStream</span> <span class="o">=</span> <span class="nx">streams</span><span class="p">.</span><span class="nx">createByteArrayInputStream</span><span class="p">(</span><span class="nx">bytes</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">contentStream</span> <span class="o">=</span> <span class="nx">cmisSession</span><span class="p">.</span><span class="nx">getObjectFactory</span><span class="p">().</span><span class="nx">createContentStream</span><span class="p">(</span><span class="nx">filename</span><span class="p">,</span> <span class="nx">bytes</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span> <span class="nx">mimetype</span><span class="p">,</span> <span class="nx">inputStream</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">properties</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">properties</span><span class="p">[</span><span class="nx">cmis</span><span class="p">.</span><span class="nx">OBJECT_TYPE_ID</span><span class="p">]</span> <span class="o">=</span> <span class="nx">cmis</span><span class="p">.</span><span class="nx">OBJECT_TYPE_DOCUMENT</span><span class="p">;</span>
+<span class="nx">properties</span><span class="p">[</span><span class="nx">cmis</span><span class="p">.</span><span class="nx">NAME</span><span class="p">]</span> <span class="o">=</span> <span class="nx">filename</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">newDocument</span><span class="p">;</span>
+<span class="k">try</span> <span class="p">{</span>
+    <span class="nx">newDocument</span> <span class="o">=</span> <span class="nx">rootFolder</span><span class="p">.</span><span class="nx">createDocument</span><span class="p">(</span><span class="nx">properties</span><span class="p">,</span> <span class="nx">contentStream</span><span class="p">,</span> <span class="nx">cmis</span><span class="p">.</span><span class="nx">VERSIONING_STATE_MAJOR</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Error: &quot;</span> <span class="o">+</span> <span class="nx">e</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">documentId</span> <span class="o">=</span> <span class="nx">newDocument</span><span class="p">.</span><span class="nx">getId</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Document ID: &quot;</span> <span class="o">+</span> <span class="nx">documentId</span><span class="p">);</span>
+
+<span class="nx">children</span> <span class="o">=</span> <span class="nx">rootFolder</span><span class="p">.</span><span class="nx">getChildren</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Listing the children of the root folder again:&quot;</span><span class="p">);</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">children</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Object ID: &quot;</span> <span class="o">+</span> <span class="nx">children</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getId</span><span class="p">());</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Object Name: &quot;</span> <span class="o">+</span> <span class="nx">children</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getName</span><span class="p">());</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Object Type: &quot;</span> <span class="o">+</span> <span class="nx">children</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getType</span><span class="p">());</span>
+<span class="p">}</span>
+
+<span class="c1">// Get the contents of the file</span>
+<span class="kd">var</span> <span class="nx">doc</span> <span class="o">=</span> <span class="nx">cmisSession</span><span class="p">.</span><span class="nx">getObject</span><span class="p">(</span><span class="nx">documentId</span><span class="p">);</span>
+<span class="nx">contentStream</span> <span class="o">=</span> <span class="nx">doc</span><span class="p">.</span><span class="nx">getContentStream</span><span class="p">();</span> <span class="c1">// returns null if the document has no content</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">contentStream</span> <span class="o">!==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">content</span> <span class="o">=</span> <span class="nx">streams</span><span class="p">.</span><span class="nx">readText</span><span class="p">(</span><span class="nx">contentStream</span><span class="p">.</span><span class="nx">getStream</span><span class="p">());</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Contents of &quot;</span> <span class="o">+</span> <span class="nx">filename</span> <span class="o">+</span> <span class="s2">&quot; are: &quot;</span> <span class="o">+</span> <span class="nx">content</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;No content.&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Deleting the newly created document&quot;</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">newDocument</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">newDocument</span><span class="p">.</span><span class="k">delete</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">flush</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="definition_2">Definition</h3>
+<h4 id="functions_2">Functions</h4>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getSession()</strong></td>
+<td>Returns the CMIS connection session to the CMS system</td>
+<td><em>Session</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="objects_2">Objects</h4>
+<hr />
+<h5 id="session_2">Session</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getRepositoryInfo()</strong></td>
+<td>Returns the information about the CMIS repository</td>
+<td><em>RepositoryInfo</em></td>
+</tr>
+<tr>
+<td><strong>getObjectFactory()</strong></td>
+<td>Returns the ObjectFactory utility</td>
+<td><em>ObjectFactory</em></td>
+</tr>
+<tr>
+<td><strong>getRootFolder()</strong></td>
+<td>Returns the root folder of this repository</td>
+<td><em>Folder</em></td>
+</tr>
+<tr>
+<td><strong>getObject()</strong></td>
+<td>Returns a CMIS Object by name</td>
+<td><em>CmisObject</em></td>
+</tr>
+<tr>
+<td><strong>getObjectByPath()</strong></td>
+<td>Returns a CMIS Object by path</td>
+<td><em>CmisObject</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="repositoryinfo_2">RepositoryInfo</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getId()</strong></td>
+<td>Returns the ID of the CMIS repository</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getName()</strong></td>
+<td>Returns the Name of the CMIS repository</td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="objectfactory_2">ObjectFactory</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>createContentStream()</strong></td>
+<td>Returns a newly created ContentStream object</td>
+<td><em>ContentStream</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="contentstream_2">ContentStream</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getStream()</strong></td>
+<td>Returns the InputStream of this ContentStream object</td>
+<td><em>streams.InputStream</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="cmisobject_2">CmisObject</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getId()</strong></td>
+<td>Returns the ID of this CmisObject</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getName()</strong></td>
+<td>Returns the Name of this CmisObject</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getType()</strong></td>
+<td>Returns the Type of this CmisObject</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>delete()</strong></td>
+<td>Deletes this CmisObject</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>rename(newName)</strong></td>
+<td>Renames this CmisObject</td>
+<td><em>-</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="folder_4">Folder</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getId()</strong></td>
+<td>Returns the ID of this Folder</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getName()</strong></td>
+<td>Returns the Name of this Folder</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getPath()</strong></td>
+<td>Returns the Path of this Folder</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>createFolder(properties)</strong></td>
+<td>Creates a new folder under this Folder</td>
+<td><em>Folder</em></td>
+</tr>
+<tr>
+<td><strong>createDocument(properties, contentStream, versioningState)</strong></td>
+<td>Creates a new document under this Folder</td>
+<td><em>Document</em></td>
+</tr>
+<tr>
+<td><strong>getChildren()</strong></td>
+<td>Returns an array of CmisObject sub-elements of this Folder</td>
+<td><em>array of CmisObject</em></td>
+</tr>
+<tr>
+<td><strong>isRootFolder()</strong></td>
+<td>Returns true if this Folder is a root folder and false otherwise</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>getFolderParent()</strong></td>
+<td>Returns the parent Folder of this Folder</td>
+<td><em>Folder</em></td>
+</tr>
+<tr>
+<td><strong>delete()</strong></td>
+<td>Deletes this Folder</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>rename(newName)</strong></td>
+<td>Renames this Folder</td>
+<td><em>-</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="document_4">Document</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getId()</strong></td>
+<td>Returns the ID of this Document</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getName()</strong></td>
+<td>Returns the Name of this Document</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>delete()</strong></td>
+<td>Deletes this Document</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getContentStream()</strong></td>
+<td>Returns the ContentStream representing the contents of this Document</td>
+<td><em>ContentStream</em></td>
+</tr>
+<tr>
+<td><strong>rename(newName)</strong></td>
+<td>Renames this Document</td>
+<td><em>-</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="constants_2">Constants</h4>
+<hr />
+<h5 id="base_2">Base</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>NAME</strong></td>
+<td>Value is <em>cmis:name</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_ID</strong></td>
+<td>Value is <em>cmis:objectId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_TYPE_ID</strong></td>
+<td>Value is <em>cmis:objectTypeId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>BASE_TYPE_ID</strong></td>
+<td>Value is <em>cmis:baseTypeId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CREATED_BY</strong></td>
+<td>Value is <em>cmis:createdBy</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CREATION_DATE</strong></td>
+<td>Value is <em>cmis:creationDate</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>LAST_MODIFIED_BY</strong></td>
+<td>Value is <em>cmis:lastModifiedBy</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>LAST_MODIFICATION_DATE</strong></td>
+<td>Value is <em>cmis:lastModificationDate</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CHANGE_TOKEN</strong></td>
+<td>Value is <em>mis:changeToken</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="document_5">Document</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IS_IMMUTABLE</strong></td>
+<td>Value is <em>cmis:isImmutable</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>IS_LATEST_VERSION</strong></td>
+<td>Value is <em>cmis:isLatestVersion</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>IS_MAJOR_VERSION</strong></td>
+<td>Value is <em>cmis:isMajorVersion</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>IS_LATEST_MAJOR_VERSION</strong></td>
+<td>Value is <em>cmis:isLatestMajorVersion</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSION_LABEL</strong></td>
+<td>Value is <em>cmis:versionLabel</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSION_SERIES_ID</strong></td>
+<td>Value is <em>ccmis:versionSeriesId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>IS_VERSION_SERIES_CHECKED_OUT</strong></td>
+<td>Value is <em>cmis:isVersionSeriesCheckedOut</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSION_SERIES_CHECKED_OUT_BY</strong></td>
+<td>Value is <em>cmis:versionSeriesCheckedOutBy</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSION_SERIES_CHECKED_OUT_ID</strong></td>
+<td>Value is <em>cmis:versionSeriesCheckedOutId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CHECKIN_COMMENT</strong></td>
+<td>Value is <em>cmis:checkinComment</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CONTENT_STREAM_LENGTH</strong></td>
+<td>Value is <em>cmis:contentStreamLength</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CONTENT_STREAM_MIME_TYPE</strong></td>
+<td>Value is <em>cmis:contentStreamMimeType</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CONTENT_STREAM_FILE_NAME</strong></td>
+<td>Value is <em>cmis:contentStreamFileName</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>CONTENT_STREAM_ID</strong></td>
+<td>Value is <em>cmis:contentStreamId</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="folder_5">Folder</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PARENT_ID</strong></td>
+<td>Value is <em>cmis:parentId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>ALLOWED_CHILD_OBJECT_TYPE_IDS</strong></td>
+<td>Value is <em>cmis:allowedChildObjectTypeIds</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>PATH</strong></td>
+<td>Value is <em>cmis:path</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="relationship_4">Relationship</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SOURCE_ID</strong></td>
+<td>Value is <em>cmis:sourceId</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>TARGET_ID</strong></td>
+<td>Value is <em>cmis:targetId</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="relationship_5">Relationship</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>POLICY_TEXT</strong></td>
+<td>Value is <em>cmis:policyText</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="versioning-states_2">Versioning States</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VERSIONING_STATE_NONE</strong></td>
+<td>Value is <em>none</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSIONING_STATE_MAJOR</strong></td>
+<td>Value is <em>major</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSIONING_STATE_MINOR</strong></td>
+<td>Value is <em>minor</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>VERSIONING_STATE_CHECKEDOUT</strong></td>
+<td>Value is <em>checkedout</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="object-types_2">Object Types</h5>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OBJECT_TYPE_DOCUMENT</strong></td>
+<td>Value is <em>cmis:document</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_TYPE_FOLDER</strong></td>
+<td>Value is <em>cmis:folder</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_TYPE_RELATIONSHIP</strong></td>
+<td>Value is <em>cmis:relationship</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_TYPE_POLICY</strong></td>
+<td>Value is <em>cmis:policy</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_TYPE_ITEM</strong></td>
+<td>Value is <em>cmis:item</em></td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>OBJECT_TYPE_SECONDARY</strong></td>
+<td>Value is <em>cmis:secondary</em></td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="compatibility_2">Compatibility</h3>
+<table>
+<thead>
+<tr>
+<th>Rhino</th>
+<th>Nashorn</th>
+<th>V8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>SOAP - My Docs</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Api <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../cmis/" class="dropdown-item">CMIS</a>
+</li>
+                                    
+<li>
+    <a href="../../console/" class="dropdown-item">Console</a>
+</li>
+                                    
+<li>
+    <a href="../../log_logging/" class="dropdown-item">Logging</a>
+</li>
+                                    
+<li>
+    <a href="../../security_user/" class="dropdown-item">Security User</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Bpm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../bpm/bpm_process/" class="dropdown-item">BPM Process</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../core/core_assert/" class="dropdown-item">Assert</a>
+</li>
+            
+<li>
+    <a href="../../core/core_config/" class="dropdown-item">Config</a>
+</li>
+            
+<li>
+    <a href="../../core/core_configurations/" class="dropdown-item">Configurations</a>
+</li>
+            
+<li>
+    <a href="../../core/core_context/" class="dropdown-item">Context</a>
+</li>
+            
+<li>
+    <a href="../../core/core_destinations/" class="dropdown-item">Destinations</a>
+</li>
+            
+<li>
+    <a href="../../core/core_env/" class="dropdown-item">Env</a>
+</li>
+            
+<li>
+    <a href="../../core/core_extensions/" class="dropdown-item">Extensions</a>
+</li>
+            
+<li>
+    <a href="../../core/core_globals/" class="dropdown-item">Globals</a>
+</li>
+            
+<li>
+    <a href="../../core/core_java/" class="dropdown-item">Java</a>
+</li>
+            
+<li>
+    <a href="../../core/core_template-engine/" class="dropdown-item">Template Engine</a>
+</li>
+            
+<li>
+    <a href="../../core/core_threads/" class="dropdown-item">Thread</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Database</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../database/database/" class="dropdown-item">Database</a>
+</li>
+            
+<li>
+    <a href="../../database/database_dao/" class="dropdown-item">Database DAO</a>
+</li>
+            
+<li>
+    <a href="../../database/database_query/" class="dropdown-item">Database Query</a>
+</li>
+            
+<li>
+    <a href="../../database/database_sequence/" class="dropdown-item">Database Sequence</a>
+</li>
+            
+<li>
+    <a href="../../database/database_sql/" class="dropdown-item">Database SQL</a>
+</li>
+            
+<li>
+    <a href="../../database/database_update/" class="dropdown-item">Database Update</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Http</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../http/client-async/" class="dropdown-item">Client Async</a>
+</li>
+            
+<li>
+    <a href="../../http/client/" class="dropdown-item">HTTP Client</a>
+</li>
+            
+<li>
+    <a href="../../http/request/" class="dropdown-item">Request</a>
+</li>
+            
+<li>
+    <a href="../../http/response/" class="dropdown-item">Response</a>
+</li>
+            
+<li>
+    <a href="../../http/rs-data/" class="dropdown-item">RS-Data</a>
+</li>
+            
+<li>
+    <a href="../../http/rs/" class="dropdown-item">RS</a>
+</li>
+            
+<li>
+    <a href="../../http/session/" class="dropdown-item">Session</a>
+</li>
+            
+<li>
+    <a href="../../http/upload/" class="dropdown-item">Upload</a>
+</li>
+            
+<li>
+    <a href="../../http/user/" class="dropdown-item">User</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Indexing</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../indexing/indexing/" class="dropdown-item">Indexing</a>
+</li>
+            
+<li>
+    <a href="../../indexing/indexing_searcher/" class="dropdown-item">Indexing Searcher</a>
+</li>
+            
+<li>
+    <a href="../../indexing/indexing_writer/" class="dropdown-item">Indexing Writer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Io</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../io/io_bytes/" class="dropdown-item">Bytes</a>
+</li>
+            
+<li>
+    <a href="../../io/io_files/" class="dropdown-item">Files</a>
+</li>
+            
+<li>
+    <a href="../../io/io_ftp/" class="dropdown-item">FTP Client</a>
+</li>
+            
+<li>
+    <a href="../../io/io_streams/" class="dropdown-item">Streams</a>
+</li>
+            
+<li>
+    <a href="../../io/io_zip/" class="dropdown-item">Zip</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Kafka</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../kafka/kafka_consumer/" class="dropdown-item">Kafka Consumer</a>
+</li>
+            
+<li>
+    <a href="../../kafka/kafka_producer/" class="dropdown-item">Kafka Producer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Mail</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../mail/mail/" class="dropdown-item">Mail</a>
+</li>
+            
+<li>
+    <a href="../../mail/mail_client/" class="dropdown-item">Mail</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Messaging</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../messaging/messaging/" class="dropdown-item">Messaging</a>
+</li>
+            
+<li>
+    <a href="../../messaging/messaging_consumer/" class="dropdown-item">Message Consumer</a>
+</li>
+            
+<li>
+    <a href="../../messaging/messaging_producer/" class="dropdown-item">Message Producer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Mongodb</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../mongodb/mongodb_client/" class="dropdown-item">MongoDB Client API</a>
+</li>
+            
+<li>
+    <a href="../../mongodb/mongodb_dao/" class="dropdown-item">MongoDB DAO API</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Net</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="./" class="dropdown-item active">SOAP</a>
+</li>
+            
+<li>
+    <a href="../net_websocket/" class="dropdown-item">Websocket</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Platform</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../platform/platform_engines/" class="dropdown-item">Engines</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_lifecycle/" class="dropdown-item">Lifecycle</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_registry/" class="dropdown-item">Registry</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_repository/" class="dropdown-item">Repository</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_template-engines/" class="dropdown-item">Template Engines</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_workspace/" class="dropdown-item">Workspace</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Repository</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../repository/repository/" class="dropdown-item">Repository</a>
+</li>
+            
+<li>
+    <a href="../../repository/repository_content/" class="dropdown-item">Repository Content</a>
+</li>
+            
+<li>
+    <a href="../../repository/repository_manager/" class="dropdown-item">Repository Manager</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../utils/utils_base64/" class="dropdown-item">Base64</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_digest/" class="dropdown-item">Digest</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_error/" class="dropdown-item">Error</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_escape/" class="dropdown-item">Escape Utils</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_hex/" class="dropdown-item">Hex</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_url/" class="dropdown-item">Url</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_uuid/" class="dropdown-item">UUID</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_xml/" class="dropdown-item">XML</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_xss/" class="dropdown-item">XSS</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../mongodb/mongodb_dao/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../net_websocket/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#pagetitle" class="nav-link">{{ page.title }}</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#version-4x" class="nav-link">Version 4.x</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#basic-usage" class="nav-link">Basic Usage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#definition" class="nav-link">Definition</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#compatibility" class="nav-link">Compatibility</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#version-3x" class="nav-link">Version 3.x</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#version-2x" class="nav-link">Version 2.x</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#basic-usage_1" class="nav-link">Basic Usage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#definition_1" class="nav-link">Definition</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#compatibility_1" class="nav-link">Compatibility</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="pagetitle">{{ page.title }}</h1>
+<p>SOAP utility exposes web services frameowrk for manipulating SOAP messages, making calls to external end-points and creating simple web services</p>
+<h2 id="version-4x">Version 4.x</h2>
+<ul>
+<li>Module: <strong>net/v4/soap</strong></li>
+<li>Alias: <strong>net/soap</strong></li>
+<li>Definition: <a href="https://github.com/eclipse/dirigible/issues/390">https://github.com/eclipse/dirigible/issues/390</a></li>
+<li>Source: <a href="https://github.com/dirigiblelabs/api-net/blob/master/net/v4/soap.js">/net/v4/soap.js</a></li>
+<li>Facade: none</li>
+<li>Status: <strong>stable</strong></li>
+</ul>
+<h2 id="basic-usage">Basic Usage</h2>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">soap</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;net/v4/soap&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;http/v4/response&#39;</span><span class="p">);</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">setContentType</span><span class="p">(</span><span class="s2">&quot;text/plain; charset=UTF-8&quot;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">requestMessage</span> <span class="o">=</span> <span class="nx">soap</span><span class="p">.</span><span class="nx">createMessage</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">part</span> <span class="o">=</span> <span class="nx">requestMessage</span><span class="p">.</span><span class="nx">getPart</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">envelope</span> <span class="o">=</span> <span class="nx">part</span><span class="p">.</span><span class="nx">getEnvelope</span><span class="p">();</span>
+<span class="nx">envelope</span><span class="p">.</span><span class="nx">addNamespaceDeclaration</span><span class="p">(</span><span class="s2">&quot;ws&quot;</span><span class="p">,</span> <span class="s2">&quot;http://ws.cdyne.com/&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">body</span> <span class="o">=</span> <span class="nx">envelope</span><span class="p">.</span><span class="nx">getBody</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">resolveIPElement</span> <span class="o">=</span> <span class="nx">body</span><span class="p">.</span><span class="nx">addChildElement</span><span class="p">(</span><span class="s2">&quot;ResolveIP&quot;</span><span class="p">,</span> <span class="s2">&quot;ws&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">ipAddressElement</span> <span class="o">=</span> <span class="nx">resolveIPElement</span><span class="p">.</span><span class="nx">addChildElement</span><span class="p">(</span><span class="s2">&quot;ipAddress&quot;</span><span class="p">,</span> <span class="s2">&quot;ws&quot;</span><span class="p">);</span>
+<span class="nx">ipAddressElement</span><span class="p">.</span><span class="nx">addTextNode</span><span class="p">(</span><span class="s2">&quot;213.239.203.158&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">licenseKeyElement</span> <span class="o">=</span> <span class="nx">resolveIPElement</span><span class="p">.</span><span class="nx">addChildElement</span><span class="p">(</span><span class="s2">&quot;licenseKey&quot;</span><span class="p">,</span> <span class="s2">&quot;ws&quot;</span><span class="p">);</span>
+<span class="nx">licenseKeyElement</span><span class="p">.</span><span class="nx">addTextNode</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">mimeHeaders</span> <span class="o">=</span> <span class="nx">requestMessage</span><span class="p">.</span><span class="nx">getMimeHeaders</span><span class="p">();</span>
+<span class="nx">mimeHeaders</span><span class="p">.</span><span class="nx">addHeader</span><span class="p">(</span><span class="s2">&quot;SOAPAction&quot;</span><span class="p">,</span> <span class="s2">&quot;http://ws.cdyne.com/ResolveIP&quot;</span><span class="p">);</span>
+
+<span class="nx">requestMessage</span><span class="p">.</span><span class="nx">save</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Request: &quot;</span> <span class="o">+</span> <span class="nx">requestMessage</span><span class="p">.</span><span class="nx">getText</span><span class="p">());</span>
+
+<span class="kd">var</span> <span class="nx">responseMessage</span> <span class="o">=</span> <span class="nx">soap</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">requestMessage</span><span class="p">,</span> <span class="s2">&quot;http://ws.cdyne.com/ip2geo/ip2geo.asmx&quot;</span><span class="p">);</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Response: &quot;</span> <span class="o">+</span> <span class="nx">responseMessage</span><span class="p">.</span><span class="nx">getText</span><span class="p">());</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">flush</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</code></pre></div>
+<h2 id="definition">Definition</h2>
+<h3 id="functions">Functions</h3>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>createMessage()</strong></td>
+<td>Creates an empty SOAP Message</td>
+<td><em>Message</em></td>
+</tr>
+<tr>
+<td><strong>parseMessage(mimeHeaders, inputStream)</strong></td>
+<td>Creates a message by a given MIME Headers and by parsing of the provided input stream</td>
+<td><em>Message</em></td>
+</tr>
+<tr>
+<td><strong>parseRequest()</strong></td>
+<td>Creates a message by parsing the standard Request input and empty headers</td>
+<td><em>Message</em></td>
+</tr>
+<tr>
+<td><strong>createMimeHeaders()</strong></td>
+<td>Creates an empty MimeHeaders</td>
+<td><em>MimeHeaders</em></td>
+</tr>
+<tr>
+<td><strong>call(request, url)</strong></td>
+<td>Calls an end-point of a SOAP Web Service with a request Message and returns the response Message</td>
+<td><em>Message</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="objects">Objects</h3>
+<hr />
+<h4 id="message">Message</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getMimeHeaders()</strong></td>
+<td>Returns the MimeHeaders object of this Message</td>
+<td><em>MimeHeaders</em></td>
+</tr>
+<tr>
+<td><strong>getPart()</strong></td>
+<td>Returns the Part object of this Message</td>
+<td><em>Part</em></td>
+</tr>
+<tr>
+<td><strong>save()</strong></td>
+<td>Save the changes made on the Message and its components</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>getText()</strong></td>
+<td>Returns a text representation of the Message</td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="mimeheaders">MimeHeaders</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>addHeader(name, value)</strong></td>
+<td>Creates and add a new MIME header</td>
+<td><em>-</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="part">Part</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getEnvelope()</strong></td>
+<td>Returns the Envelope object of this Part</td>
+<td><em>Envelope</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="envelope">Envelope</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getBody()</strong></td>
+<td>Returns the Body object of this Envelope</td>
+<td><em>Body</em></td>
+</tr>
+<tr>
+<td><strong>getHeader()</strong></td>
+<td>Returns the Header object of this Envelope</td>
+<td><em>Header</em></td>
+</tr>
+<tr>
+<td><strong>addNamespaceDeclaration(prefix, uri)</strong></td>
+<td>Creates and add a namespace attribute</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>createName(localName, prefix, uri)</strong></td>
+<td>Creates a Name object to be used further</td>
+<td><em>Name</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="body">Body</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getChildElements()</strong></td>
+<td>Returns an array of the child Elements</td>
+<td><em>[Element]</em></td>
+</tr>
+<tr>
+<td><strong>addChildElement(localName, prefix)</strong></td>
+<td>Creates and add a child Element</td>
+<td><em>Element</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="header">Header</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>addHeaderElement(name)</strong></td>
+<td>Creates and add a Header Element with a Name</td>
+<td><em>Element</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="name">Name</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getLocalName()</strong></td>
+<td>Returns the Local Name of the Name object</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getPrefix()</strong></td>
+<td>Returns the Prefix of the Name object</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getQualifiedName()</strong></td>
+<td>Returns the Qualified Name of the Name object</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getURI()</strong></td>
+<td>Returns the URI of the Name object</td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="element">Element</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getChildElements()</strong></td>
+<td>Returns an array of the child Elements</td>
+<td><em>[Element]</em></td>
+</tr>
+<tr>
+<td><strong>getElementName()</strong></td>
+<td>Returns the name of the Element</td>
+<td><em>Name</em></td>
+</tr>
+<tr>
+<td><strong>getValue()</strong></td>
+<td>Returns the value of the Element if any</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>addChildElement(localName, prefix)</strong></td>
+<td>Creates and add a child Element</td>
+<td><em>Element</em></td>
+</tr>
+<tr>
+<td><strong>addTextNode(text)</strong></td>
+<td>Creates and add a text node</td>
+<td><em>Element</em></td>
+</tr>
+<tr>
+<td><strong>addAttribute(name, value)</strong></td>
+<td>Creates and add an attribute</td>
+<td><em>Element</em></td>
+</tr>
+<tr>
+<td><strong>isSOAPElement()</strong></td>
+<td>Returns true if the Element is SOAP Element and false otherwise (e.g. CDATA, PDATA, etc.)</td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="compatibility">Compatibility</h2>
+<table>
+<thead>
+<tr>
+<th>Rhino</th>
+<th>Nashorn</th>
+<th>V8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<h2 id="version-3x">Version 3.x</h2>
+<p>Not officially supported.</p>
+<hr />
+<h2 id="version-2x">Version 2.x</h2>
+<ul>
+<li>Module: <strong>net/soap</strong></li>
+<li>Definition: <a href="https://github.com/dirigiblelabs/core_api/issues/37">/core_api/issues/37</a></li>
+<li>Source: <a href="https://github.com/dirigiblelabs/core_api/blob/master/core_api/ScriptingServices/net/soap.js">/net/soap.js</a></li>
+<li>Status: <strong>beta</strong></li>
+</ul>
+<h2 id="basic-usage_1">Basic Usage</h2>
+<div class="highlight"><pre><span></span><code><span class="cm">/* globals $ */</span>
+<span class="cm">/* eslint-env node, dirigible */</span>
+
+<span class="kd">var</span> <span class="nx">soap</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;net/soap&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;net/http/response&#39;</span><span class="p">);</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">setContentType</span><span class="p">(</span><span class="s2">&quot;text/plain; charset=UTF-8&quot;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">requestMessage</span> <span class="o">=</span> <span class="nx">soap</span><span class="p">.</span><span class="nx">createMessage</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">part</span> <span class="o">=</span> <span class="nx">requestMessage</span><span class="p">.</span><span class="nx">getPart</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">envelope</span> <span class="o">=</span> <span class="nx">part</span><span class="p">.</span><span class="nx">getEnvelope</span><span class="p">();</span>
+<span class="nx">envelope</span><span class="p">.</span><span class="nx">addNamespaceDeclaration</span><span class="p">(</span><span class="s2">&quot;ws&quot;</span><span class="p">,</span> <span class="s2">&quot;http://ws.cdyne.com/&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">body</span> <span class="o">=</span> <span class="nx">envelope</span><span class="p">.</span><span class="nx">getBody</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">resolveIPElement</span> <span class="o">=</span> <span class="nx">body</span><span class="p">.</span><span class="nx">addChildElement</span><span class="p">(</span><span class="s2">&quot;ResolveIP&quot;</span><span class="p">,</span> <span class="s2">&quot;ws&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">ipAddressElement</span> <span class="o">=</span> <span class="nx">resolveIPElement</span><span class="p">.</span><span class="nx">addChildElement</span><span class="p">(</span><span class="s2">&quot;ipAddress&quot;</span><span class="p">,</span> <span class="s2">&quot;ws&quot;</span><span class="p">);</span>
+<span class="nx">ipAddressElement</span><span class="p">.</span><span class="nx">addTextNode</span><span class="p">(</span><span class="s2">&quot;213.239.203.158&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">licenseKeyElement</span> <span class="o">=</span> <span class="nx">resolveIPElement</span><span class="p">.</span><span class="nx">addChildElement</span><span class="p">(</span><span class="s2">&quot;licenseKey&quot;</span><span class="p">,</span> <span class="s2">&quot;ws&quot;</span><span class="p">);</span>
+<span class="nx">licenseKeyElement</span><span class="p">.</span><span class="nx">addTextNode</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">mimeHeaders</span> <span class="o">=</span> <span class="nx">requestMessage</span><span class="p">.</span><span class="nx">getMimeHeaders</span><span class="p">();</span>
+<span class="nx">mimeHeaders</span><span class="p">.</span><span class="nx">addHeader</span><span class="p">(</span><span class="s2">&quot;SOAPAction&quot;</span><span class="p">,</span> <span class="s2">&quot;http://ws.cdyne.com/ResolveIP&quot;</span><span class="p">);</span>
+
+<span class="nx">requestMessage</span><span class="p">.</span><span class="nx">save</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Request: &quot;</span> <span class="o">+</span> <span class="nx">requestMessage</span><span class="p">.</span><span class="nx">getText</span><span class="p">());</span>
+
+<span class="kd">var</span> <span class="nx">responseMessage</span> <span class="o">=</span> <span class="nx">soap</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">requestMessage</span><span class="p">,</span> <span class="s2">&quot;http://ws.cdyne.com/ip2geo/ip2geo.asmx&quot;</span><span class="p">);</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Response: &quot;</span> <span class="o">+</span> <span class="nx">responseMessage</span><span class="p">.</span><span class="nx">getText</span><span class="p">());</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">flush</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</code></pre></div>
+<h2 id="definition_1">Definition</h2>
+<h3 id="functions_1">Functions</h3>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>createMessage()</strong></td>
+<td>Creates an empty SOAP Message</td>
+<td><em>Message</em></td>
+</tr>
+<tr>
+<td><strong>parseMessage(mimeHeaders, inputStream)</strong></td>
+<td>Creates a message by a given MIME Headers and by parsing of the provided input stream</td>
+<td><em>Message</em></td>
+</tr>
+<tr>
+<td><strong>parseRequest()</strong></td>
+<td>Creates a message by parsing the standard Request input and empty headers</td>
+<td><em>Message</em></td>
+</tr>
+<tr>
+<td><strong>createMimeHeaders()</strong></td>
+<td>Creates an empty MimeHeaders</td>
+<td><em>MimeHeaders</em></td>
+</tr>
+<tr>
+<td><strong>call(request, url)</strong></td>
+<td>Calls an end-point of a SOAP Web Service with a request Message and returns the response Message</td>
+<td><em>Message</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="objects_1">Objects</h3>
+<hr />
+<h4 id="message_1">Message</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getMimeHeaders()</strong></td>
+<td>Returns the MimeHeaders object of this Message</td>
+<td><em>MimeHeaders</em></td>
+</tr>
+<tr>
+<td><strong>getPart()</strong></td>
+<td>Returns the Part object of this Message</td>
+<td><em>Part</em></td>
+</tr>
+<tr>
+<td><strong>save()</strong></td>
+<td>Save the changes made on the Message and its components</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>getText()</strong></td>
+<td>Returns a text representation of the Message</td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="mimeheaders_1">MimeHeaders</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>addHeader(name, value)</strong></td>
+<td>Creates and add a new MIME header</td>
+<td><em>-</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="part_1">Part</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getEnvelope()</strong></td>
+<td>Returns the Envelope object of this Part</td>
+<td><em>Envelope</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="envelope_1">Envelope</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getBody()</strong></td>
+<td>Returns the Body object of this Envelope</td>
+<td><em>Body</em></td>
+</tr>
+<tr>
+<td><strong>getHeader()</strong></td>
+<td>Returns the Header object of this Envelope</td>
+<td><em>Header</em></td>
+</tr>
+<tr>
+<td><strong>addNamespaceDeclaration(prefix, uri)</strong></td>
+<td>Creates and add a namespace attribute</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>createName(localName, prefix, uri)</strong></td>
+<td>Creates a Name object to be used further</td>
+<td><em>Name</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="body_1">Body</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getChildElements()</strong></td>
+<td>Returns an array of the child Elements</td>
+<td><em>[Element]</em></td>
+</tr>
+<tr>
+<td><strong>addChildElement(localName, prefix)</strong></td>
+<td>Creates and add a child Element</td>
+<td><em>Element</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="header_1">Header</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>addHeaderElement(name)</strong></td>
+<td>Creates and add a Header Element with a Name</td>
+<td><em>Element</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="name_1">Name</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getLocalName()</strong></td>
+<td>Returns the Local Name of the Name object</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getPrefix()</strong></td>
+<td>Returns the Prefix of the Name object</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getQualifiedName()</strong></td>
+<td>Returns the Qualified Name of the Name object</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getURI()</strong></td>
+<td>Returns the URI of the Name object</td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="element_1">Element</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getChildElements()</strong></td>
+<td>Returns an array of the child Elements</td>
+<td><em>[Element]</em></td>
+</tr>
+<tr>
+<td><strong>getElementName()</strong></td>
+<td>Returns the name of the Element</td>
+<td><em>Name</em></td>
+</tr>
+<tr>
+<td><strong>getValue()</strong></td>
+<td>Returns the value of the Element if any</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>addChildElement(localName, prefix)</strong></td>
+<td>Creates and add a child Element</td>
+<td><em>Element</em></td>
+</tr>
+<tr>
+<td><strong>addTextNode(text)</strong></td>
+<td>Creates and add a text node</td>
+<td><em>Element</em></td>
+</tr>
+<tr>
+<td><strong>addAttribute(name, value)</strong></td>
+<td>Creates and add an attribute</td>
+<td><em>Element</em></td>
+</tr>
+<tr>
+<td><strong>isSOAPElement()</strong></td>
+<td>Returns true if the Element is SOAP Element and false otherwise (e.g. CDATA, PDATA, etc.)</td>
+<td><em>string</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="compatibility_1">Compatibility</h2>
+<table>
+<thead>
+<tr>
+<th>Rhino</th>
+<th>Nashorn</th>
+<th>V8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

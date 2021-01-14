@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>FTP Client - My Docs</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Api <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../cmis/" class="dropdown-item">CMIS</a>
+</li>
+                                    
+<li>
+    <a href="../../console/" class="dropdown-item">Console</a>
+</li>
+                                    
+<li>
+    <a href="../../log_logging/" class="dropdown-item">Logging</a>
+</li>
+                                    
+<li>
+    <a href="../../security_user/" class="dropdown-item">Security User</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Bpm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../bpm/bpm_process/" class="dropdown-item">BPM Process</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../core/core_assert/" class="dropdown-item">Assert</a>
+</li>
+            
+<li>
+    <a href="../../core/core_config/" class="dropdown-item">Config</a>
+</li>
+            
+<li>
+    <a href="../../core/core_configurations/" class="dropdown-item">Configurations</a>
+</li>
+            
+<li>
+    <a href="../../core/core_context/" class="dropdown-item">Context</a>
+</li>
+            
+<li>
+    <a href="../../core/core_destinations/" class="dropdown-item">Destinations</a>
+</li>
+            
+<li>
+    <a href="../../core/core_env/" class="dropdown-item">Env</a>
+</li>
+            
+<li>
+    <a href="../../core/core_extensions/" class="dropdown-item">Extensions</a>
+</li>
+            
+<li>
+    <a href="../../core/core_globals/" class="dropdown-item">Globals</a>
+</li>
+            
+<li>
+    <a href="../../core/core_java/" class="dropdown-item">Java</a>
+</li>
+            
+<li>
+    <a href="../../core/core_template-engine/" class="dropdown-item">Template Engine</a>
+</li>
+            
+<li>
+    <a href="../../core/core_threads/" class="dropdown-item">Thread</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Database</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../database/database/" class="dropdown-item">Database</a>
+</li>
+            
+<li>
+    <a href="../../database/database_dao/" class="dropdown-item">Database DAO</a>
+</li>
+            
+<li>
+    <a href="../../database/database_query/" class="dropdown-item">Database Query</a>
+</li>
+            
+<li>
+    <a href="../../database/database_sequence/" class="dropdown-item">Database Sequence</a>
+</li>
+            
+<li>
+    <a href="../../database/database_sql/" class="dropdown-item">Database SQL</a>
+</li>
+            
+<li>
+    <a href="../../database/database_update/" class="dropdown-item">Database Update</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Http</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../http/client-async/" class="dropdown-item">Client Async</a>
+</li>
+            
+<li>
+    <a href="../../http/client/" class="dropdown-item">HTTP Client</a>
+</li>
+            
+<li>
+    <a href="../../http/request/" class="dropdown-item">Request</a>
+</li>
+            
+<li>
+    <a href="../../http/response/" class="dropdown-item">Response</a>
+</li>
+            
+<li>
+    <a href="../../http/rs-data/" class="dropdown-item">RS-Data</a>
+</li>
+            
+<li>
+    <a href="../../http/rs/" class="dropdown-item">RS</a>
+</li>
+            
+<li>
+    <a href="../../http/session/" class="dropdown-item">Session</a>
+</li>
+            
+<li>
+    <a href="../../http/upload/" class="dropdown-item">Upload</a>
+</li>
+            
+<li>
+    <a href="../../http/user/" class="dropdown-item">User</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Indexing</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../indexing/indexing/" class="dropdown-item">Indexing</a>
+</li>
+            
+<li>
+    <a href="../../indexing/indexing_searcher/" class="dropdown-item">Indexing Searcher</a>
+</li>
+            
+<li>
+    <a href="../../indexing/indexing_writer/" class="dropdown-item">Indexing Writer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Io</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../io_bytes/" class="dropdown-item">Bytes</a>
+</li>
+            
+<li>
+    <a href="../io_files/" class="dropdown-item">Files</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">FTP Client</a>
+</li>
+            
+<li>
+    <a href="../io_streams/" class="dropdown-item">Streams</a>
+</li>
+            
+<li>
+    <a href="../io_zip/" class="dropdown-item">Zip</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Kafka</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../kafka/kafka_consumer/" class="dropdown-item">Kafka Consumer</a>
+</li>
+            
+<li>
+    <a href="../../kafka/kafka_producer/" class="dropdown-item">Kafka Producer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Mail</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../mail/mail/" class="dropdown-item">Mail</a>
+</li>
+            
+<li>
+    <a href="../../mail/mail_client/" class="dropdown-item">Mail</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Messaging</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../messaging/messaging/" class="dropdown-item">Messaging</a>
+</li>
+            
+<li>
+    <a href="../../messaging/messaging_consumer/" class="dropdown-item">Message Consumer</a>
+</li>
+            
+<li>
+    <a href="../../messaging/messaging_producer/" class="dropdown-item">Message Producer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Mongodb</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../mongodb/mongodb_client/" class="dropdown-item">MongoDB Client API</a>
+</li>
+            
+<li>
+    <a href="../../mongodb/mongodb_dao/" class="dropdown-item">MongoDB DAO API</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Net</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../net/net_soap/" class="dropdown-item">SOAP</a>
+</li>
+            
+<li>
+    <a href="../../net/net_websocket/" class="dropdown-item">Websocket</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Platform</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../platform/platform_engines/" class="dropdown-item">Engines</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_lifecycle/" class="dropdown-item">Lifecycle</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_registry/" class="dropdown-item">Registry</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_repository/" class="dropdown-item">Repository</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_template-engines/" class="dropdown-item">Template Engines</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_workspace/" class="dropdown-item">Workspace</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Repository</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../repository/repository/" class="dropdown-item">Repository</a>
+</li>
+            
+<li>
+    <a href="../../repository/repository_content/" class="dropdown-item">Repository Content</a>
+</li>
+            
+<li>
+    <a href="../../repository/repository_manager/" class="dropdown-item">Repository Manager</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../utils/utils_base64/" class="dropdown-item">Base64</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_digest/" class="dropdown-item">Digest</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_error/" class="dropdown-item">Error</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_escape/" class="dropdown-item">Escape Utils</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_hex/" class="dropdown-item">Hex</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_url/" class="dropdown-item">Url</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_uuid/" class="dropdown-item">UUID</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_xml/" class="dropdown-item">XML</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_xss/" class="dropdown-item">XSS</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../io_files/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../io_streams/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#pagetitle" class="nav-link">{{ page.title }}</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#version-4x" class="nav-link">Version 4.x</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="pagetitle">{{ page.title }}</h1>
+<p>FTP Client API provides utility functions for working with FTP servers.</p>
+<h2 id="version-4x">Version 4.x</h2>
+<ul>
+<li>Module: <strong>io/v4/ftp</strong></li>
+<li>Alias: <strong>io/ftp</strong></li>
+<li>Definition: n/a</li>
+<li>Source: <a href="https://github.com/dirigiblelabs/api-io/blob/master/io/v4/ftp.js">/io/v4/ftp.js</a></li>
+<li>Facade: n/a</li>
+<li>Status: <strong>stable</strong></li>
+</ul>
+<h3 id="basic-usage">Basic Usage</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;http/v4/response&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">ftp</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;io/v4/ftp&quot;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">host</span> <span class="o">=</span> <span class="s2">&quot;test.rebex.net&quot;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">port</span> <span class="o">=</span> <span class="mf">21</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">userName</span> <span class="o">=</span> <span class="s2">&quot;demo&quot;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">password</span> <span class="o">=</span> <span class="s2">&quot;password&quot;</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">ftpClient</span> <span class="o">=</span> <span class="nx">ftp</span><span class="p">.</span><span class="nx">getClient</span><span class="p">(</span><span class="nx">host</span><span class="p">,</span> <span class="nx">port</span><span class="p">,</span> <span class="nx">userName</span><span class="p">,</span> <span class="nx">password</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">file</span> <span class="o">=</span> <span class="nx">ftpClient</span><span class="p">.</span><span class="nx">getFileText</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">,</span> <span class="s2">&quot;readme.txt&quot;</span><span class="p">);</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="nx">file</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="definition">Definition</h3>
+<h4 id="functions">Functions</h4>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getClient(host, port, userName, password)</strong></td>
+<td>Returns a FTP Client instance</td>
+<td><em>FTPClient</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="objects">Objects</h4>
+<hr />
+<h5 id="ftpclient">FTPClient</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getRootFolder()</strong></td>
+<td>Gets the root folder</td>
+<td><em>FTPFolder</em></td>
+</tr>
+<tr>
+<td><strong>getFile(path, fileName)</strong></td>
+<td>Gets the file content as an input stream</td>
+<td><em>InputStream</em></td>
+</tr>
+<tr>
+<td><strong>getFileBinary(path, fileName)</strong></td>
+<td>Gets the file content as byte array</td>
+<td><em>byte array</em></td>
+</tr>
+<tr>
+<td><strong>getFileText(path, fileName)</strong></td>
+<td>Gets the file content as string</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getFolder(path, folderName)</strong></td>
+<td>Gets the folder</td>
+<td><em>FTPFolder</em></td>
+</tr>
+<tr>
+<td><strong>createFile(path, fileName, inputStream)</strong></td>
+<td>Creates file from InputStream and return true if the file was created successfully</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>createFileBinary(path, fileName, bytes)</strong></td>
+<td>Creates file from byte array and return true if the file was created successfully</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>createFileText(path, fileName, text)</strong></td>
+<td>Creates file from string and return true if the file was created successfully</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>appendFile(path, fileName, inputStream)</strong></td>
+<td>Appends InputStream to file and return true if the file was created successfully</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>appendFileBinary(path, fileName, bytes)</strong></td>
+<td>Appends byte array to file and return true if the file was created successfully</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>appendFileText(path, fileName, text)</strong></td>
+<td>Appends string to file and return true if the file was created successfully</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>createFolder(path, folderName)</strong></td>
+<td>Creates folder</td>
+<td><em>FTPFolder</em></td>
+</tr>
+<tr>
+<td><strong>deleteFile(path, fileName)</strong></td>
+<td>Deletes file</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>deleteFolder(path, folderName)</strong></td>
+<td>Deletes folder</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>close()</strong></td>
+<td>Closes the FPT client</td>
+<td><em>-</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="ftpfolder">FTPFolder</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getPath()</strong></td>
+<td>Gets the folder path</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getName()</strong></td>
+<td>Gets the folder name</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getFile(fileName)</strong></td>
+<td>Gets FTPFile by fileName</td>
+<td><em>FTPFile</em></td>
+</tr>
+<tr>
+<td><strong>getFolder(folderName)</strong></td>
+<td>Gets FTPFolder by folderName</td>
+<td><em>FTPFolder</em></td>
+</tr>
+<tr>
+<td><strong>list()</strong></td>
+<td>Gets array of FTPObjects</td>
+<td><em>FTPObject array</em></td>
+</tr>
+<tr>
+<td><strong>listFiles()</strong></td>
+<td>Gets array of FTPFiles</td>
+<td><em>FTPFile array</em></td>
+</tr>
+<tr>
+<td><strong>listFolders()</strong></td>
+<td>Gets array of FTPFolder</td>
+<td><em>FTPFolder array</em></td>
+</tr>
+<tr>
+<td><strong>createFile(fileName, inputStream)</strong></td>
+<td>Creates file from InputStream and return true if the file was created successfully</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>createFileBinary(fileName, bytes)</strong></td>
+<td>Creates file from byte array and return true if the file was created successfully</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>createFileText(fileName, text)</strong></td>
+<td>Creates file from string and return true if the file was created successfully</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>createFolder(folder)</strong></td>
+<td>Creates FTPFolder</td>
+<td><em>FTPFolder</em></td>
+</tr>
+<tr>
+<td><strong>delete()</strong></td>
+<td>Deletes the current folder</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>deleteFile(fileName)</strong></td>
+<td>Deletes FTPFile</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>deleteFolder(folderName)</strong></td>
+<td>Deletes FTPFolder</td>
+<td><em>boolean</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="ftpfile">FTPFile</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getPath()</strong></td>
+<td>Gets the folder path</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getName()</strong></td>
+<td>Gets the folder name</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getContent()</strong></td>
+<td>Gets the file content</td>
+<td><em>InputStream</em></td>
+</tr>
+<tr>
+<td><strong>getContentBinary()</strong></td>
+<td>Gets the file content</td>
+<td><em>byte array</em></td>
+</tr>
+<tr>
+<td><strong>getContentText()</strong></td>
+<td>Gets the file content</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>setContent(inputStream)</strong></td>
+<td>Sets the file content from an InputStream</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>setContentBinary(bytes)</strong></td>
+<td>Sets the file content from byte array</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>setContentText(text)</strong></td>
+<td>Sets the file content from string</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>appendContent(inputStream)</strong></td>
+<td>Appends file content from an InputStream</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>appendContentBinary(bytes)</strong></td>
+<td>Appends file content from an byte array</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>appendContentText(text)</strong></td>
+<td>Appends file content from string</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>delete()</strong></td>
+<td>Deletes the file</td>
+<td><em>boolean</em></td>
+</tr>
+</tbody>
+</table>
+<h5 id="ftpobject">FTPObject</h5>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getPath()</strong></td>
+<td>Gets the object path</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getName()</strong></td>
+<td>Gets the object name</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>isFile()</strong></td>
+<td>Returns true if the object is file</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>isFolder()</strong></td>
+<td>Returns true if the object is folder</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>getFile()</strong></td>
+<td>Gets object as FTPFile</td>
+<td><em>FTPFile</em></td>
+</tr>
+<tr>
+<td><strong>getFolder()</strong></td>
+<td>Gets object as FTPFolder</td>
+<td><em>FTPFolder</em></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Rhino</th>
+<th>Nashorn</th>
+<th>V8</th>
+<th>Graal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

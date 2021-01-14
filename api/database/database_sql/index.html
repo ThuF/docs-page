@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Database SQL - My Docs</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Api <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../cmis/" class="dropdown-item">CMIS</a>
+</li>
+                                    
+<li>
+    <a href="../../console/" class="dropdown-item">Console</a>
+</li>
+                                    
+<li>
+    <a href="../../log_logging/" class="dropdown-item">Logging</a>
+</li>
+                                    
+<li>
+    <a href="../../security_user/" class="dropdown-item">Security User</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Bpm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../bpm/bpm_process/" class="dropdown-item">BPM Process</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../core/core_assert/" class="dropdown-item">Assert</a>
+</li>
+            
+<li>
+    <a href="../../core/core_config/" class="dropdown-item">Config</a>
+</li>
+            
+<li>
+    <a href="../../core/core_configurations/" class="dropdown-item">Configurations</a>
+</li>
+            
+<li>
+    <a href="../../core/core_context/" class="dropdown-item">Context</a>
+</li>
+            
+<li>
+    <a href="../../core/core_destinations/" class="dropdown-item">Destinations</a>
+</li>
+            
+<li>
+    <a href="../../core/core_env/" class="dropdown-item">Env</a>
+</li>
+            
+<li>
+    <a href="../../core/core_extensions/" class="dropdown-item">Extensions</a>
+</li>
+            
+<li>
+    <a href="../../core/core_globals/" class="dropdown-item">Globals</a>
+</li>
+            
+<li>
+    <a href="../../core/core_java/" class="dropdown-item">Java</a>
+</li>
+            
+<li>
+    <a href="../../core/core_template-engine/" class="dropdown-item">Template Engine</a>
+</li>
+            
+<li>
+    <a href="../../core/core_threads/" class="dropdown-item">Thread</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Database</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../database/" class="dropdown-item">Database</a>
+</li>
+            
+<li>
+    <a href="../database_dao/" class="dropdown-item">Database DAO</a>
+</li>
+            
+<li>
+    <a href="../database_query/" class="dropdown-item">Database Query</a>
+</li>
+            
+<li>
+    <a href="../database_sequence/" class="dropdown-item">Database Sequence</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Database SQL</a>
+</li>
+            
+<li>
+    <a href="../database_update/" class="dropdown-item">Database Update</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Http</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../http/client-async/" class="dropdown-item">Client Async</a>
+</li>
+            
+<li>
+    <a href="../../http/client/" class="dropdown-item">HTTP Client</a>
+</li>
+            
+<li>
+    <a href="../../http/request/" class="dropdown-item">Request</a>
+</li>
+            
+<li>
+    <a href="../../http/response/" class="dropdown-item">Response</a>
+</li>
+            
+<li>
+    <a href="../../http/rs-data/" class="dropdown-item">RS-Data</a>
+</li>
+            
+<li>
+    <a href="../../http/rs/" class="dropdown-item">RS</a>
+</li>
+            
+<li>
+    <a href="../../http/session/" class="dropdown-item">Session</a>
+</li>
+            
+<li>
+    <a href="../../http/upload/" class="dropdown-item">Upload</a>
+</li>
+            
+<li>
+    <a href="../../http/user/" class="dropdown-item">User</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Indexing</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../indexing/indexing/" class="dropdown-item">Indexing</a>
+</li>
+            
+<li>
+    <a href="../../indexing/indexing_searcher/" class="dropdown-item">Indexing Searcher</a>
+</li>
+            
+<li>
+    <a href="../../indexing/indexing_writer/" class="dropdown-item">Indexing Writer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Io</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../io/io_bytes/" class="dropdown-item">Bytes</a>
+</li>
+            
+<li>
+    <a href="../../io/io_files/" class="dropdown-item">Files</a>
+</li>
+            
+<li>
+    <a href="../../io/io_ftp/" class="dropdown-item">FTP Client</a>
+</li>
+            
+<li>
+    <a href="../../io/io_streams/" class="dropdown-item">Streams</a>
+</li>
+            
+<li>
+    <a href="../../io/io_zip/" class="dropdown-item">Zip</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Kafka</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../kafka/kafka_consumer/" class="dropdown-item">Kafka Consumer</a>
+</li>
+            
+<li>
+    <a href="../../kafka/kafka_producer/" class="dropdown-item">Kafka Producer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Mail</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../mail/mail/" class="dropdown-item">Mail</a>
+</li>
+            
+<li>
+    <a href="../../mail/mail_client/" class="dropdown-item">Mail</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Messaging</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../messaging/messaging/" class="dropdown-item">Messaging</a>
+</li>
+            
+<li>
+    <a href="../../messaging/messaging_consumer/" class="dropdown-item">Message Consumer</a>
+</li>
+            
+<li>
+    <a href="../../messaging/messaging_producer/" class="dropdown-item">Message Producer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Mongodb</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../mongodb/mongodb_client/" class="dropdown-item">MongoDB Client API</a>
+</li>
+            
+<li>
+    <a href="../../mongodb/mongodb_dao/" class="dropdown-item">MongoDB DAO API</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Net</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../net/net_soap/" class="dropdown-item">SOAP</a>
+</li>
+            
+<li>
+    <a href="../../net/net_websocket/" class="dropdown-item">Websocket</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Platform</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../platform/platform_engines/" class="dropdown-item">Engines</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_lifecycle/" class="dropdown-item">Lifecycle</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_registry/" class="dropdown-item">Registry</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_repository/" class="dropdown-item">Repository</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_template-engines/" class="dropdown-item">Template Engines</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_workspace/" class="dropdown-item">Workspace</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Repository</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../repository/repository/" class="dropdown-item">Repository</a>
+</li>
+            
+<li>
+    <a href="../../repository/repository_content/" class="dropdown-item">Repository Content</a>
+</li>
+            
+<li>
+    <a href="../../repository/repository_manager/" class="dropdown-item">Repository Manager</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../utils/utils_base64/" class="dropdown-item">Base64</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_digest/" class="dropdown-item">Digest</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_error/" class="dropdown-item">Error</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_escape/" class="dropdown-item">Escape Utils</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_hex/" class="dropdown-item">Hex</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_url/" class="dropdown-item">Url</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_uuid/" class="dropdown-item">UUID</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_xml/" class="dropdown-item">XML</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_xss/" class="dropdown-item">XSS</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../database_sequence/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../database_update/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#pagetitle" class="nav-link">{{ page.title }}</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#version-4x" class="nav-link">Version 4.x</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#compatibility" class="nav-link">Compatibility</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#version-3x" class="nav-link">Version 3.x</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#compatibility_1" class="nav-link">Compatibility</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="pagetitle">{{ page.title }}</h1>
+<p>Type-safe SQL builders with multi-dialect support.</p>
+<h2 id="version-4x">Version 4.x</h2>
+<ul>
+<li>Module: <strong>db/v4/sql</strong></li>
+<li>Alias: <strong>db/sql</strong></li>
+<li>Definition: <a href="https://github.com/eclipse/dirigible/issues/125">https://github.com/eclipse/dirigible/issues/125</a></li>
+<li>Source: <a href="https://github.com/dirigiblelabs/api-db/blob/master/db/v4/sql.js">/db/v4/sql.js</a></li>
+<li>Facade: <a href="https://github.com/eclipse/dirigible/blob/master/api/api-facade/api-database/src/main/java/org/eclipse/dirigible/api/v3/db/DatabaseFacade.java">DatabaseFacade</a></li>
+<li>Status: <strong>stable</strong></li>
+</ul>
+<h3 id="basic-usage">Basic Usage</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">sql</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;db/v4/sql&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;http/v4/response&quot;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">script</span> <span class="o">=</span> <span class="nx">sql</span><span class="p">.</span><span class="nx">getDialect</span><span class="p">().</span><span class="nx">select</span><span class="p">().</span><span class="nx">column</span><span class="p">(</span><span class="s2">&quot;FIRST_NAME&quot;</span><span class="p">).</span><span class="nx">column</span><span class="p">(</span><span class="s2">&quot;LAST_NAME&quot;</span><span class="p">).</span><span class="nx">from</span><span class="p">(</span><span class="s2">&quot;CUSTOMERS&quot;</span><span class="p">).</span><span class="nx">build</span><span class="p">();</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="nx">script</span><span class="p">);</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">flush</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="definition">Definition</h3>
+<h4 id="functions">Functions</h4>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getDialect(connection?)</strong></td>
+<td>Returns the dialect based on the provided <em>connection</em> if any or the default one otherwise</td>
+<td><em>Dialect</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="objects">Objects</h3>
+<hr />
+<h4 id="dialect">Dialect</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>select()</strong></td>
+<td>Returns a Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>insert()</strong></td>
+<td>Returns an Insert SQL builder</td>
+<td><em>Insert</em></td>
+</tr>
+<tr>
+<td><strong>update()</strong></td>
+<td>Returns an Update SQL builder</td>
+<td><em>Update</em></td>
+</tr>
+<tr>
+<td><strong>delete()</strong></td>
+<td>Returns a Delete SQL builder</td>
+<td><em>Delete</em></td>
+</tr>
+<tr>
+<td><strong>nextval(name)</strong></td>
+<td>Returns a Nextval SQL builder by a given <em>name</em></td>
+<td><em>Nextval</em></td>
+</tr>
+<tr>
+<td><strong>create()</strong></td>
+<td>Returns a Create SQL builder</td>
+<td><em>Create</em></td>
+</tr>
+<tr>
+<td><strong>drop()</strong></td>
+<td>Returns a Drop SQL builder</td>
+<td><em>Drop</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="select">Select</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>distinct()</strong></td>
+<td>Sets the <em>distinct</em> flag and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>forUpdate()</strong></td>
+<td>Sets the <em>forUpdate</em> flag and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>column(name)</strong></td>
+<td>Adds a column with the given <em>name</em> and returns the current Select SQL builder. Use * for all</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>from(table, alias?)</strong></td>
+<td>Adds a table with the given <em>table</em> name and <em>alias</em> and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>join(table, on, alias?)</strong></td>
+<td>Adds a <em>join</em> clause and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>innerJoin(table, on, alias?)</strong></td>
+<td>Adds a <em>join</em> clause and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>outerJoin(table, on, alias?)</strong></td>
+<td>Adds a <em>join</em> clause and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>leftJoin(table, on, alias?)</strong></td>
+<td>Adds a <em>join</em> clause and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>rightJoin(table, on, alias?)</strong></td>
+<td>Adds a <em>join</em> clause and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>fullJoin(table, on, alias?)</strong></td>
+<td>Adds a <em>join</em> clause and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>where(condition)</strong></td>
+<td>Adds a where clause with the given <em>condition</em> and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>order(column, asc?)</strong></td>
+<td>Adds an order clause with the given <em>column</em> and optionally the ascending or descending order and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>group(column)</strong></td>
+<td>Adds a <em>group by</em> clause and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>union(select)</strong></td>
+<td>Adds an <em>union</em> clause and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>having(condition)</strong></td>
+<td>Adds an <em>having</em> clause and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>limit()</strong></td>
+<td>Sets the <em>limit</em> number and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>offset()</strong></td>
+<td>Sets the <em>offset</em> number and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the Select SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="insert">Insert</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>into(table)</strong></td>
+<td>Sets the <em>table</em> name and returns the current Insert SQL builder</td>
+<td><em>Insert</em></td>
+</tr>
+<tr>
+<td><strong>column(name)</strong></td>
+<td>Adds a column <em>name</em> and returns the current Insert SQL builder</td>
+<td><em>Insert</em></td>
+</tr>
+<tr>
+<td><strong>value(param)</strong></td>
+<td>Adds a value <em>param</em> and returns the current Insert SQL builder. Use <em>?</em> for prepared statements afterwards.</td>
+<td><em>Insert</em></td>
+</tr>
+<tr>
+<td><strong>select(statement)</strong></td>
+<td>Sets the <em>select</em> statement if needed and returns the current Insert SQL builder</td>
+<td><em>Insert</em></td>
+</tr>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the Insert SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="update">Update</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>table(name)</strong></td>
+<td>Sets the table <em>name</em> and returns the current Update SQL builder</td>
+<td><em>Update</em></td>
+</tr>
+<tr>
+<td><strong>set(column, value)</strong></td>
+<td>Adds a <em>column</em> - <em>value</em> pair and returns the current Update SQL builder</td>
+<td><em>Update</em></td>
+</tr>
+<tr>
+<td><strong>where(condition)</strong></td>
+<td>Adds a where clause with the given <em>condition</em> and returns the current Update SQL builder</td>
+<td><em>Update</em></td>
+</tr>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the Update SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="delete">Delete</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>from(table)</strong></td>
+<td>Sets the <em>table</em> name and returns the current Delete SQL builder</td>
+<td><em>Delete</em></td>
+</tr>
+<tr>
+<td><strong>where(condition)</strong></td>
+<td>Adds a where clause with the given <em>condition</em> and returns the current Delete SQL builder</td>
+<td><em>Delete</em></td>
+</tr>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the Delete SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="nextval">Nextval</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the Nextval SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="create">Create</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>table(name)</strong></td>
+<td>Returns a CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>view(name)</strong></td>
+<td>Returns a CreateView SQL builder</td>
+<td><em>CreateView</em></td>
+</tr>
+<tr>
+<td><strong>sequence(name)</strong></td>
+<td>Returns a CreateSequence SQL builder</td>
+<td><em>CreateSequence</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="drop">Drop</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>table(name)</strong></td>
+<td>Returns a DropTable SQL builder</td>
+<td><em>DropTable</em></td>
+</tr>
+<tr>
+<td><strong>view(name)</strong></td>
+<td>Returns a DropView SQL builder</td>
+<td><em>DropView</em></td>
+</tr>
+<tr>
+<td><strong>sequence(name)</strong></td>
+<td>Returns a DropSequence SQL builder</td>
+<td><em>DropSequence</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="createtable">CreateTable</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>column(name, type, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnVarchar(name, length, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>VARCHAR</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnChar(name, length, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>CHAR</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnDate(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>DATE</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnTime(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>TIME</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnTimestamp(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>TIMESTAMP</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnInteger(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>INTEGER</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnTinyint(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>TINYINT</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnBigint(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>BIGINT</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnSmallint(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>SMALLINT</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnDate(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>DATE</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnReal(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>REAL</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnDouble(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>DOUBLE PRECISION</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnBoolean(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>BOOLEAN</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnBlob(name, isNullable?, args?)</strong></td>
+<td>Adds a <em>BLOB</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnDecimal(column, precision, scale, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>DECIMAL</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>primaryKey(columns, name?)</strong></td>
+<td>Sets a <em>primary key</em> definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>foreignKey(name, columns, referencedTable, referencedColumns)</strong></td>
+<td>Adds a <em>foreign key</em> definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>unique(name, columns)</strong></td>
+<td>Adds an <em>unique</em> index definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>check(name, expression)</strong></td>
+<td>Adds a <em>check</em> definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the CreateTable SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="createview">CreateView</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>column(name)</strong></td>
+<td>Adds a column definition and returns the current VieweTable SQL builder</td>
+<td><em>VieweTable</em></td>
+</tr>
+<tr>
+<td><strong>asSelect(select)</strong></td>
+<td>Sets the <em>select</em> definition and returns the current VieweTable SQL builder</td>
+<td><em>VieweTable</em></td>
+</tr>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the VieweTable SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="createsequence">CreateSequence</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the Sequence SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="droptable">DropTable</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the DropTable SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="dropview">DropView</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the DropView SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="dropsequence">DropSequence</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the DropSequence SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="compatibility">Compatibility</h2>
+<table>
+<thead>
+<tr>
+<th>Rhino</th>
+<th>Nashorn</th>
+<th>V8</th>
+<th>Graal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="version-3x">Version 3.x</h2>
+<ul>
+<li>Module: <strong>db/v3/sql</strong></li>
+<li>Alias: <strong>db/sql</strong></li>
+<li>Definition: <a href="https://github.com/eclipse/dirigible/issues/125">https://github.com/eclipse/dirigible/issues/125</a></li>
+<li>Source: <a href="https://github.com/dirigiblelabs/api-v3-db/blob/master/db/v3/sql.js">/db/v3/sql.js</a></li>
+<li>Facade: <a href="https://github.com/eclipse/dirigible/blob/master/api/api-facade/api-database/src/main/java/org/eclipse/dirigible/api/v3/db/DatabaseFacade.java">DatabaseFacade</a></li>
+<li>Status: <strong>alpha</strong></li>
+</ul>
+<h3 id="basic-usage_1">Basic Usage</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">sql</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;db/v3/sql&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;http/v3/response&quot;</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">script</span> <span class="o">=</span> <span class="nx">sql</span><span class="p">.</span><span class="nx">getDialect</span><span class="p">().</span><span class="nx">select</span><span class="p">().</span><span class="nx">column</span><span class="p">(</span><span class="s2">&quot;FIRST_NAME&quot;</span><span class="p">).</span><span class="nx">column</span><span class="p">(</span><span class="s2">&quot;LAST_NAME&quot;</span><span class="p">).</span><span class="nx">from</span><span class="p">(</span><span class="s2">&quot;CUSTOMERS&quot;</span><span class="p">).</span><span class="nx">build</span><span class="p">();</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="nx">script</span><span class="p">);</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">flush</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="definition_1">Definition</h3>
+<h4 id="functions_1">Functions</h4>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>getDialect(connection?)</strong></td>
+<td>Returns the dialect based on the provided <em>connection</em> if any or the default one otherwise</td>
+<td><em>Dialect</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="objects_1">Objects</h3>
+<hr />
+<h4 id="dialect_1">Dialect</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>select()</strong></td>
+<td>Returns a Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>insert()</strong></td>
+<td>Returns an Insert SQL builder</td>
+<td><em>Insert</em></td>
+</tr>
+<tr>
+<td><strong>update()</strong></td>
+<td>Returns an Update SQL builder</td>
+<td><em>Update</em></td>
+</tr>
+<tr>
+<td><strong>delete()</strong></td>
+<td>Returns a Delete SQL builder</td>
+<td><em>Delete</em></td>
+</tr>
+<tr>
+<td><strong>nextval(name)</strong></td>
+<td>Returns a Nextval SQL builder by a given <em>name</em></td>
+<td><em>Nextval</em></td>
+</tr>
+<tr>
+<td><strong>create()</strong></td>
+<td>Returns a Create SQL builder</td>
+<td><em>Create</em></td>
+</tr>
+<tr>
+<td><strong>drop()</strong></td>
+<td>Returns a Drop SQL builder</td>
+<td><em>Drop</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="select_1">Select</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>distinct()</strong></td>
+<td>Sets the <em>distinct</em> flag and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>forUpdate()</strong></td>
+<td>Sets the <em>forUpdate</em> flag and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>column(name)</strong></td>
+<td>Adds a column with the given <em>name</em> and returns the current Select SQL builder. Use * for all</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>from(table, alias?)</strong></td>
+<td>Adds a table with the given <em>table</em> name and <em>alias</em> and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>join(table, on, alias?)</strong></td>
+<td>Adds a <em>join</em> clause and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>innerJoin(table, on, alias?)</strong></td>
+<td>Adds a <em>join</em> clause and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>outerJoin(table, on, alias?)</strong></td>
+<td>Adds a <em>join</em> clause and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>leftJoin(table, on, alias?)</strong></td>
+<td>Adds a <em>join</em> clause and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>rightJoin(table, on, alias?)</strong></td>
+<td>Adds a <em>join</em> clause and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>fullJoin(table, on, alias?)</strong></td>
+<td>Adds a <em>join</em> clause and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>where(condition)</strong></td>
+<td>Adds a where clause with the given <em>condition</em> and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>order(column, asc?)</strong></td>
+<td>Adds an order clause with the given <em>column</em> and optionally the ascending or descending order and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>group(column)</strong></td>
+<td>Adds a <em>group by</em> clause and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>union(select)</strong></td>
+<td>Adds an <em>union</em> clause and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>having(condition)</strong></td>
+<td>Adds an <em>having</em> clause and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>limit()</strong></td>
+<td>Sets the <em>limit</em> number and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>offset()</strong></td>
+<td>Sets the <em>offset</em> number and returns the current Select SQL builder</td>
+<td><em>Select</em></td>
+</tr>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the Select SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="insert_1">Insert</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>into(table)</strong></td>
+<td>Sets the <em>table</em> name and returns the current Insert SQL builder</td>
+<td><em>Insert</em></td>
+</tr>
+<tr>
+<td><strong>column(name)</strong></td>
+<td>Adds a column <em>name</em> and returns the current Insert SQL builder</td>
+<td><em>Insert</em></td>
+</tr>
+<tr>
+<td><strong>value(param)</strong></td>
+<td>Adds a value <em>param</em> and returns the current Insert SQL builder. Use <em>?</em> for prepared statements afterwards.</td>
+<td><em>Insert</em></td>
+</tr>
+<tr>
+<td><strong>select(statement)</strong></td>
+<td>Sets the <em>select</em> statement if needed and returns the current Insert SQL builder</td>
+<td><em>Insert</em></td>
+</tr>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the Insert SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="update_1">Update</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>table(name)</strong></td>
+<td>Sets the table <em>name</em> and returns the current Update SQL builder</td>
+<td><em>Update</em></td>
+</tr>
+<tr>
+<td><strong>set(column, value)</strong></td>
+<td>Adds a <em>column</em> - <em>value</em> pair and returns the current Update SQL builder</td>
+<td><em>Update</em></td>
+</tr>
+<tr>
+<td><strong>where(condition)</strong></td>
+<td>Adds a where clause with the given <em>condition</em> and returns the current Update SQL builder</td>
+<td><em>Update</em></td>
+</tr>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the Update SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="delete_1">Delete</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>from(table)</strong></td>
+<td>Sets the <em>table</em> name and returns the current Delete SQL builder</td>
+<td><em>Delete</em></td>
+</tr>
+<tr>
+<td><strong>where(condition)</strong></td>
+<td>Adds a where clause with the given <em>condition</em> and returns the current Delete SQL builder</td>
+<td><em>Delete</em></td>
+</tr>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the Delete SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="nextval_1">Nextval</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the Nextval SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="create_1">Create</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>table(name)</strong></td>
+<td>Returns a CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>view(name)</strong></td>
+<td>Returns a CreateView SQL builder</td>
+<td><em>CreateView</em></td>
+</tr>
+<tr>
+<td><strong>sequence(name)</strong></td>
+<td>Returns a CreateSequence SQL builder</td>
+<td><em>CreateSequence</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="drop_1">Drop</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>table(name)</strong></td>
+<td>Returns a DropTable SQL builder</td>
+<td><em>DropTable</em></td>
+</tr>
+<tr>
+<td><strong>view(name)</strong></td>
+<td>Returns a DropView SQL builder</td>
+<td><em>DropView</em></td>
+</tr>
+<tr>
+<td><strong>sequence(name)</strong></td>
+<td>Returns a DropSequence SQL builder</td>
+<td><em>DropSequence</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="createtable_1">CreateTable</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>column(name, type, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnVarchar(name, length, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>VARCHAR</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnChar(name, length, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>CHAR</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnDate(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>DATE</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnTime(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>TIME</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnTimestamp(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>TIMESTAMP</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnInteger(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>INTEGER</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnTinyint(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>TINYINT</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnBigint(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>BIGINT</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnSmallint(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>SMALLINT</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnDate(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>DATE</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnReal(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>REAL</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnDouble(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>DOUBLE PRECISION</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnBoolean(name, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>BOOLEAN</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnBlob(name, isNullable?, args?)</strong></td>
+<td>Adds a <em>BLOB</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>columnDecimal(column, precision, scale, isPrimaryKey?, isNullable?, isUnique?, args?)</strong></td>
+<td>Adds a <em>DECIMAL</em> column definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>primaryKey(columns, name?)</strong></td>
+<td>Sets a <em>primary key</em> definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>foreignKey(name, columns, referencedTable, referencedColumns)</strong></td>
+<td>Adds a <em>foreign key</em> definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>unique(name, columns)</strong></td>
+<td>Adds an <em>unique</em> index definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>check(name, expression)</strong></td>
+<td>Adds a <em>check</em> definition and returns the current CreateTable SQL builder</td>
+<td><em>CreateTable</em></td>
+</tr>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the CreateTable SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="createview_1">CreateView</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>column(name)</strong></td>
+<td>Adds a column definition and returns the current VieweTable SQL builder</td>
+<td><em>VieweTable</em></td>
+</tr>
+<tr>
+<td><strong>asSelect(select)</strong></td>
+<td>Sets the <em>select</em> definition and returns the current VieweTable SQL builder</td>
+<td><em>VieweTable</em></td>
+</tr>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the VieweTable SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="createsequence_1">CreateSequence</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the Sequence SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="droptable_1">DropTable</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the DropTable SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="dropview_1">DropView</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the DropView SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="dropsequence_1">DropSequence</h4>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>build()</strong></td>
+<td>Generate and returns the DropSequence SQL statement as a string</td>
+<td><em>String</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="compatibility_1">Compatibility</h2>
+<table>
+<thead>
+<tr>
+<th>Rhino</th>
+<th>Nashorn</th>
+<th>V8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

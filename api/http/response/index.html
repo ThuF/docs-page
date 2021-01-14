@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Response - My Docs</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Api <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../cmis/" class="dropdown-item">CMIS</a>
+</li>
+                                    
+<li>
+    <a href="../../console/" class="dropdown-item">Console</a>
+</li>
+                                    
+<li>
+    <a href="../../log_logging/" class="dropdown-item">Logging</a>
+</li>
+                                    
+<li>
+    <a href="../../security_user/" class="dropdown-item">Security User</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Bpm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../bpm/bpm_process/" class="dropdown-item">BPM Process</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../core/core_assert/" class="dropdown-item">Assert</a>
+</li>
+            
+<li>
+    <a href="../../core/core_config/" class="dropdown-item">Config</a>
+</li>
+            
+<li>
+    <a href="../../core/core_configurations/" class="dropdown-item">Configurations</a>
+</li>
+            
+<li>
+    <a href="../../core/core_context/" class="dropdown-item">Context</a>
+</li>
+            
+<li>
+    <a href="../../core/core_destinations/" class="dropdown-item">Destinations</a>
+</li>
+            
+<li>
+    <a href="../../core/core_env/" class="dropdown-item">Env</a>
+</li>
+            
+<li>
+    <a href="../../core/core_extensions/" class="dropdown-item">Extensions</a>
+</li>
+            
+<li>
+    <a href="../../core/core_globals/" class="dropdown-item">Globals</a>
+</li>
+            
+<li>
+    <a href="../../core/core_java/" class="dropdown-item">Java</a>
+</li>
+            
+<li>
+    <a href="../../core/core_template-engine/" class="dropdown-item">Template Engine</a>
+</li>
+            
+<li>
+    <a href="../../core/core_threads/" class="dropdown-item">Thread</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Database</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../database/database/" class="dropdown-item">Database</a>
+</li>
+            
+<li>
+    <a href="../../database/database_dao/" class="dropdown-item">Database DAO</a>
+</li>
+            
+<li>
+    <a href="../../database/database_query/" class="dropdown-item">Database Query</a>
+</li>
+            
+<li>
+    <a href="../../database/database_sequence/" class="dropdown-item">Database Sequence</a>
+</li>
+            
+<li>
+    <a href="../../database/database_sql/" class="dropdown-item">Database SQL</a>
+</li>
+            
+<li>
+    <a href="../../database/database_update/" class="dropdown-item">Database Update</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Http</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../client-async/" class="dropdown-item">Client Async</a>
+</li>
+            
+<li>
+    <a href="../client/" class="dropdown-item">HTTP Client</a>
+</li>
+            
+<li>
+    <a href="../request/" class="dropdown-item">Request</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Response</a>
+</li>
+            
+<li>
+    <a href="../rs-data/" class="dropdown-item">RS-Data</a>
+</li>
+            
+<li>
+    <a href="../rs/" class="dropdown-item">RS</a>
+</li>
+            
+<li>
+    <a href="../session/" class="dropdown-item">Session</a>
+</li>
+            
+<li>
+    <a href="../upload/" class="dropdown-item">Upload</a>
+</li>
+            
+<li>
+    <a href="../user/" class="dropdown-item">User</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Indexing</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../indexing/indexing/" class="dropdown-item">Indexing</a>
+</li>
+            
+<li>
+    <a href="../../indexing/indexing_searcher/" class="dropdown-item">Indexing Searcher</a>
+</li>
+            
+<li>
+    <a href="../../indexing/indexing_writer/" class="dropdown-item">Indexing Writer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Io</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../io/io_bytes/" class="dropdown-item">Bytes</a>
+</li>
+            
+<li>
+    <a href="../../io/io_files/" class="dropdown-item">Files</a>
+</li>
+            
+<li>
+    <a href="../../io/io_ftp/" class="dropdown-item">FTP Client</a>
+</li>
+            
+<li>
+    <a href="../../io/io_streams/" class="dropdown-item">Streams</a>
+</li>
+            
+<li>
+    <a href="../../io/io_zip/" class="dropdown-item">Zip</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Kafka</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../kafka/kafka_consumer/" class="dropdown-item">Kafka Consumer</a>
+</li>
+            
+<li>
+    <a href="../../kafka/kafka_producer/" class="dropdown-item">Kafka Producer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Mail</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../mail/mail/" class="dropdown-item">Mail</a>
+</li>
+            
+<li>
+    <a href="../../mail/mail_client/" class="dropdown-item">Mail</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Messaging</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../messaging/messaging/" class="dropdown-item">Messaging</a>
+</li>
+            
+<li>
+    <a href="../../messaging/messaging_consumer/" class="dropdown-item">Message Consumer</a>
+</li>
+            
+<li>
+    <a href="../../messaging/messaging_producer/" class="dropdown-item">Message Producer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Mongodb</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../mongodb/mongodb_client/" class="dropdown-item">MongoDB Client API</a>
+</li>
+            
+<li>
+    <a href="../../mongodb/mongodb_dao/" class="dropdown-item">MongoDB DAO API</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Net</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../net/net_soap/" class="dropdown-item">SOAP</a>
+</li>
+            
+<li>
+    <a href="../../net/net_websocket/" class="dropdown-item">Websocket</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Platform</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../platform/platform_engines/" class="dropdown-item">Engines</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_lifecycle/" class="dropdown-item">Lifecycle</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_registry/" class="dropdown-item">Registry</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_repository/" class="dropdown-item">Repository</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_template-engines/" class="dropdown-item">Template Engines</a>
+</li>
+            
+<li>
+    <a href="../../platform/platform_workspace/" class="dropdown-item">Workspace</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Repository</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../repository/repository/" class="dropdown-item">Repository</a>
+</li>
+            
+<li>
+    <a href="../../repository/repository_content/" class="dropdown-item">Repository Content</a>
+</li>
+            
+<li>
+    <a href="../../repository/repository_manager/" class="dropdown-item">Repository Manager</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Utils</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../utils/utils_base64/" class="dropdown-item">Base64</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_digest/" class="dropdown-item">Digest</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_error/" class="dropdown-item">Error</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_escape/" class="dropdown-item">Escape Utils</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_hex/" class="dropdown-item">Hex</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_url/" class="dropdown-item">Url</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_uuid/" class="dropdown-item">UUID</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_xml/" class="dropdown-item">XML</a>
+</li>
+            
+<li>
+    <a href="../../utils/utils_xss/" class="dropdown-item">XSS</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../request/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../rs-data/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#version-4x" class="nav-link">Version 4.x</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#version-3x" class="nav-link">Version 3.x</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>HTTP Response object provided to the scripting services implementation to create the result, which will be sent back to the client.</p>
+<h2 id="version-4x">Version 4.x</h2>
+<ul>
+<li>Module: <strong>http/v4/response</strong></li>
+<li>Alias: <strong>http/response</strong></li>
+<li>Definition: <a href="https://github.com/eclipse/dirigible/issues/13">https://github.com/eclipse/dirigible/issues/13</a></li>
+<li>Source: <a href="https://github.com/dirigiblelabs/api-http/blob/master/http/v4/response.js">/http/v4/response.js</a></li>
+<li>Facade: <a href="https://github.com/eclipse/dirigible/blob/master/api/api-facade/api-http/src/main/java/org/eclipse/dirigible/api/v3/http/HttpResponseFacade.java">HttpResponseFacade</a></li>
+<li>Status: <strong>stable</strong></li>
+</ul>
+<h3 id="basic-usage">Basic Usage</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;http/v4/response&quot;</span><span class="p">);</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">);</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">flush</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="definition">Definition</h3>
+<h4 id="functions">Functions</h4>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>isValid()</strong></td>
+<td>Returns true if the current execution context is in a HTTP call</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>print(text)</strong></td>
+<td>Prints the text to the response body</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>println(text)</strong></td>
+<td>Prints the text to the response body with line separator at the end</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>write(bytes)</strong></td>
+<td>Prints the bytes array to the response body</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>isCommitted()</strong></td>
+<td>Whether response is already committed</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>setContentType()</strong></td>
+<td>Sets the content type</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>flush()</strong></td>
+<td>Flushes the content to the response to the client</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>close()</strong></td>
+<td>Closes the response stream to the client</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>addCookie(cookie)</strong></td>
+<td>Adds a HttpCookie to the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>containsHeader(name)</strong></td>
+<td>Checks existence of the header by name</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>encodeURL(url)</strong></td>
+<td>Returns the encoded <em>url</em> parameter</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getCharacterEncoding()</strong></td>
+<td>Returns the character encoding of the response</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>encodeRedirectURL()</strong></td>
+<td>Returns the encoded redirect URL</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getContentType()</strong></td>
+<td>Returns the content type of the response</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>sendError(code, message)</strong></td>
+<td>Sends an error instruction to the client with the given <em>code</em> and <em>message</em>. The <em>message</em> parameter is optional</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setCharacterEncoding(encoding)</strong></td>
+<td>Sets the character encoding of the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>sendRedirect(location)</strong></td>
+<td>Sends a redirect instruction to the client to the given location</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setContentLength(length)</strong></td>
+<td>Sets the content length of the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setHeader(name, value)</strong></td>
+<td>Updates a header name/value pair to the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>addHeader(name, value)</strong></td>
+<td>Adds a header name/value pair to the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setStatus(status)</strong></td>
+<td>Sets the status of the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>reset(status)</strong></td>
+<td>Resets the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>getHeader(name)</strong></td>
+<td>Returns the header value by <em>name</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setLocale(language, country, variant)</strong></td>
+<td>Sets the locale to the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>getHeaders(name)</strong></td>
+<td>Returns the array of header values by <em>name</em></td>
+<td><em>array of string</em></td>
+</tr>
+<tr>
+<td><strong>getHeaderNames()</strong></td>
+<td>Returns the names of all the headers</td>
+<td><em>array of string</em></td>
+</tr>
+<tr>
+<td><strong>getLocale()</strong></td>
+<td>Returns the locale of the response</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getOutputStream()</strong></td>
+<td>Returns the OutputStream of the response</td>
+<td><em>OutputStream</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="constants">Constants</h4>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ACCEPTED</strong></td>
+<td>Status code (202) indicating that a request was accepted for processing, but was not completed.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>BAD_GATEWAY</strong></td>
+<td>Status code (502) indicating that the HTTP server received an invalid response from a server it consulted when acting as a proxy or gateway.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>BAD_REQUEST</strong></td>
+<td>Status code (400) indicating the request sent by the client was syntactically incorrect.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>CONFLICT</strong></td>
+<td>Status code (409) indicating that the request could not be completed due to a conflict with the current state of the resource.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>CONTINUE</strong></td>
+<td>Status code (100) indicating the client can continue.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>CREATED</strong></td>
+<td>Status code (201) indicating the request succeeded and created a new resource on the server.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>EXPECTATION_FAILED</strong></td>
+<td>Status code (417) indicating that the server could not meet the expectation given in the Expect request header.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>FORBIDDEN</strong></td>
+<td>Status code (403) indicating the server understood the request but refused to fulfill it.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>FOUND</strong></td>
+<td>Status code (302) indicating that the resource reside temporarily under a different URI.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>GATEWAY_TIMEOUT</strong></td>
+<td>Status code (504) indicating that the server did not receive a timely response from the upstream server while acting as a gateway or proxy.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>GONE</strong></td>
+<td>Status code (410) indicating that the resource is no longer available at the server and no forwarding address is known.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>HTTP_VERSION_NOT_SUPPORTED</strong></td>
+<td>Status code (505) indicating that the server does not support or refuses to support the HTTP protocol version that was used in the request message.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>INTERNAL_SERVER_ERROR</strong></td>
+<td>Status code (500) indicating an error inside the HTTP server which prevented it from fulfilling the request.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>LENGTH_REQUIRED</strong></td>
+<td>Status code (411) indicating that the request cannot be handled without a defined Content-Length.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>METHOD_NOT_ALLOWED</strong></td>
+<td>Status code (405) indicating that the method specified in the Request-Line is not allowed for the resource identified by the Request-URI.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>MOVED_PERMANENTLY</strong></td>
+<td>Status code (301) indicating that the resource has permanently moved to a new location, and that future references should use a new URI with their requests.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>MOVED_TEMPORARILY</strong></td>
+<td>Status code (302) indicating that the resource has temporarily moved to another location, but that future references should still use the original URI to access the resource.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>MULTIPLE_CHOICES</strong></td>
+<td>Status code (300) indicating that the requested resource corresponds to any one of a set of representations, each with its own specific location.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>NO_CONTENT</strong></td>
+<td>Status code (204) indicating that the request succeeded but that there was no new information to return.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>NON_AUTHORITATIVE_INFORMATION</strong></td>
+<td>Status code (203) indicating that the meta information presented by the client did not originate from the server.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>NOT_ACCEPTABLE</strong></td>
+<td>Status code (406) indicating that the resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to the accept headers sent in the request.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>NOT_FOUND</strong></td>
+<td>Status code (404) indicating that the requested resource is not available.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>NOT_IMPLEMENTED</strong></td>
+<td>Status code (501) indicating the HTTP server does not support the functionality needed to fulfill the request.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>NOT_MODIFIED</strong></td>
+<td>Status code (304) indicating that a conditional GET operation found that the resource was available and not modified.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>OK</strong></td>
+<td>Status code (200) indicating the request succeeded normally.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>PARTIAL_CONTENT</strong></td>
+<td>Status code (206) indicating that the server has fulfilled the partial GET request for the resource.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>PAYMENT_REQUIRED</strong></td>
+<td>Status code (402) reserved for future use.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>PRECONDITION_FAILED</strong></td>
+<td>Status code (412) indicating that the precondition given in one or more of the request-header fields evaluated to false when it was tested on the server.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>PROXY_AUTHENTICATION_REQUIRED</strong></td>
+<td>Status code (407) indicating that the client MUST first authenticate itself with the proxy.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>REQUEST_ENTITY_TOO_LARGE</strong></td>
+<td>Status code (413) indicating that the server is refusing to process the request because the request entity is larger than the server is willing or able to process.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>REQUEST_TIMEOUT</strong></td>
+<td>Status code (408) indicating that the client did not produce a request within the time that the server was prepared to wait.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>REQUEST_URI_TOO_LONG</strong></td>
+<td>Status code (414) indicating that the server is refusing to service the request because the Request-URI is longer than the server is willing to interpret.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>REQUESTED_RANGE_NOT_SATISFIABLE</strong></td>
+<td>Status code (416) indicating that the server cannot serve the requested byte range.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>RESET_CONTENT</strong></td>
+<td>Status code (205) indicating that the agent SHOULD reset the document view which caused the request to be sent.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>SEE_OTHER</strong></td>
+<td>Status code (303) indicating that the response to the request can be found under a different URI.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>SERVICE_UNAVAILABLE</strong></td>
+<td>Status code (503) indicating that the HTTP server is temporarily overloaded, and unable to handle the request.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>SERVICE_SWITCHING_PROTOCOLSUNAVAILABLE</strong></td>
+<td>Status code (101) indicating the server is switching protocols according to Upgrade header.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>TEMPORARY_REDIRECT</strong></td>
+<td>Status code (307) indicating that the requested resource resides temporarily under a different URI.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>UNAUTHORIZED</strong></td>
+<td>Status code (401) indicating that the request requires HTTP authentication.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>UNSUPPORTED_MEDIA_TYPE</strong></td>
+<td>Status code (415) indicating that the server is refusing to service the request because the entity of the request is in a format not supported by the requested resource for the requested method.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>USE_PROXY</strong></td>
+<td>Status code (305) indicating that the requested resource MUST be accessed through the proxy given by the Location field.</td>
+<td><em>int</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="compatibility">Compatibility</h3>
+<table>
+<thead>
+<tr>
+<th>Rhino</th>
+<th>Nashorn</th>
+<th>V8</th>
+<th>Graal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="version-3x">Version 3.x</h2>
+<ul>
+<li>Module: <strong>http/v3/response</strong></li>
+<li>Alias: <strong>http/response</strong></li>
+<li>Definition: <a href="https://github.com/eclipse/dirigible/issues/13">https://github.com/eclipse/dirigible/issues/13</a></li>
+<li>Source: <a href="https://github.com/dirigiblelabs/api-v3-http/blob/master/http/v3/response.js">/http/v3/response.js</a></li>
+<li>Facade: <a href="https://github.com/eclipse/dirigible/blob/master/api/api-facade/api-http/src/main/java/org/eclipse/dirigible/api/v3/http/HttpResponseFacade.java">HttpResponseFacade</a></li>
+<li>Status: <strong>alpha</strong></li>
+</ul>
+<h3 id="basic-usage_1">Basic Usage</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;http/v3/response&quot;</span><span class="p">);</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">);</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">flush</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="definition_1">Definition</h3>
+<h4 id="functions_1">Functions</h4>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>isValid()</strong></td>
+<td>Returns true if the current execution context is in a HTTP call</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>print(text)</strong></td>
+<td>Prints the text to the response body</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>println(text)</strong></td>
+<td>Prints the text to the response body with line separator at the end</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>write(bytes)</strong></td>
+<td>Prints the bytes array to the response body</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>isCommitted()</strong></td>
+<td>Whether response is already committed</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>setContentType()</strong></td>
+<td>Sets the content type</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>flush()</strong></td>
+<td>Flushes the content to the response to the client</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>close()</strong></td>
+<td>Closes the response stream to the client</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>addCookie(cookie)</strong></td>
+<td>Adds a HttpCookie to the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>containsHeader(name)</strong></td>
+<td>Checks existence of the header by name</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>encodeURL(url)</strong></td>
+<td>Returns the encoded <em>url</em> parameter</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getCharacterEncoding()</strong></td>
+<td>Returns the character encoding of the response</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>encodeRedirectURL()</strong></td>
+<td>Returns the encoded redirect URL</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getContentType()</strong></td>
+<td>Returns the content type of the response</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>sendError(code, message)</strong></td>
+<td>Sends an error instruction to the client with the given <em>code</em> and <em>message</em>. The <em>message</em> parameter is optional</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setCharacterEncoding(encoding)</strong></td>
+<td>Sets the character encoding of the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>sendRedirect(location)</strong></td>
+<td>Sends a redirect instruction to the client to the given location</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setContentLength(length)</strong></td>
+<td>Sets the content length of the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setHeader(name, value)</strong></td>
+<td>Updates a header name/value pair to the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>addHeader(name, value)</strong></td>
+<td>Adds a header name/value pair to the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setStatus(status)</strong></td>
+<td>Sets the status of the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>reset(status)</strong></td>
+<td>Resets the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>getHeader(name)</strong></td>
+<td>Returns the header value by <em>name</em></td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setLocale(language, country, variant)</strong></td>
+<td>Sets the locale to the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>getHeaders(name)</strong></td>
+<td>Returns the array of header values by <em>name</em></td>
+<td><em>array of string</em></td>
+</tr>
+<tr>
+<td><strong>getHeaderNames()</strong></td>
+<td>Returns the names of all the headers</td>
+<td><em>array of string</em></td>
+</tr>
+<tr>
+<td><strong>getLocale()</strong></td>
+<td>Returns the locale of the response</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getOutputStream()</strong></td>
+<td>Returns the OutputStream of the response</td>
+<td><em>OutputStream</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="constants_1">Constants</h4>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ACCEPTED</strong></td>
+<td>Status code (202) indicating that a request was accepted for processing, but was not completed.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>BAD_GATEWAY</strong></td>
+<td>Status code (502) indicating that the HTTP server received an invalid response from a server it consulted when acting as a proxy or gateway.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>BAD_REQUEST</strong></td>
+<td>Status code (400) indicating the request sent by the client was syntactically incorrect.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>CONFLICT</strong></td>
+<td>Status code (409) indicating that the request could not be completed due to a conflict with the current state of the resource.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>CONTINUE</strong></td>
+<td>Status code (100) indicating the client can continue.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>CREATED</strong></td>
+<td>Status code (201) indicating the request succeeded and created a new resource on the server.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>EXPECTATION_FAILED</strong></td>
+<td>Status code (417) indicating that the server could not meet the expectation given in the Expect request header.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>FORBIDDEN</strong></td>
+<td>Status code (403) indicating the server understood the request but refused to fulfill it.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>FOUND</strong></td>
+<td>Status code (302) indicating that the resource reside temporarily under a different URI.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>GATEWAY_TIMEOUT</strong></td>
+<td>Status code (504) indicating that the server did not receive a timely response from the upstream server while acting as a gateway or proxy.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>GONE</strong></td>
+<td>Status code (410) indicating that the resource is no longer available at the server and no forwarding address is known.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>HTTP_VERSION_NOT_SUPPORTED</strong></td>
+<td>Status code (505) indicating that the server does not support or refuses to support the HTTP protocol version that was used in the request message.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>INTERNAL_SERVER_ERROR</strong></td>
+<td>Status code (500) indicating an error inside the HTTP server which prevented it from fulfilling the request.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>LENGTH_REQUIRED</strong></td>
+<td>Status code (411) indicating that the request cannot be handled without a defined Content-Length.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>METHOD_NOT_ALLOWED</strong></td>
+<td>Status code (405) indicating that the method specified in the Request-Line is not allowed for the resource identified by the Request-URI.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>MOVED_PERMANENTLY</strong></td>
+<td>Status code (301) indicating that the resource has permanently moved to a new location, and that future references should use a new URI with their requests.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>MOVED_TEMPORARILY</strong></td>
+<td>Status code (302) indicating that the resource has temporarily moved to another location, but that future references should still use the original URI to access the resource.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>MULTIPLE_CHOICES</strong></td>
+<td>Status code (300) indicating that the requested resource corresponds to any one of a set of representations, each with its own specific location.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>NO_CONTENT</strong></td>
+<td>Status code (204) indicating that the request succeeded but that there was no new information to return.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>NON_AUTHORITATIVE_INFORMATION</strong></td>
+<td>Status code (203) indicating that the meta information presented by the client did not originate from the server.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>NOT_ACCEPTABLE</strong></td>
+<td>Status code (406) indicating that the resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to the accept headers sent in the request.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>NOT_FOUND</strong></td>
+<td>Status code (404) indicating that the requested resource is not available.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>NOT_IMPLEMENTED</strong></td>
+<td>Status code (501) indicating the HTTP server does not support the functionality needed to fulfill the request.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>NOT_MODIFIED</strong></td>
+<td>Status code (304) indicating that a conditional GET operation found that the resource was available and not modified.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>OK</strong></td>
+<td>Status code (200) indicating the request succeeded normally.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>PARTIAL_CONTENT</strong></td>
+<td>Status code (206) indicating that the server has fulfilled the partial GET request for the resource.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>PAYMENT_REQUIRED</strong></td>
+<td>Status code (402) reserved for future use.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>PRECONDITION_FAILED</strong></td>
+<td>Status code (412) indicating that the precondition given in one or more of the request-header fields evaluated to false when it was tested on the server.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>PROXY_AUTHENTICATION_REQUIRED</strong></td>
+<td>Status code (407) indicating that the client MUST first authenticate itself with the proxy.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>REQUEST_ENTITY_TOO_LARGE</strong></td>
+<td>Status code (413) indicating that the server is refusing to process the request because the request entity is larger than the server is willing or able to process.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>REQUEST_TIMEOUT</strong></td>
+<td>Status code (408) indicating that the client did not produce a request within the time that the server was prepared to wait.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>REQUEST_URI_TOO_LONG</strong></td>
+<td>Status code (414) indicating that the server is refusing to service the request because the Request-URI is longer than the server is willing to interpret.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>REQUESTED_RANGE_NOT_SATISFIABLE</strong></td>
+<td>Status code (416) indicating that the server cannot serve the requested byte range.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>RESET_CONTENT</strong></td>
+<td>Status code (205) indicating that the agent SHOULD reset the document view which caused the request to be sent.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>SEE_OTHER</strong></td>
+<td>Status code (303) indicating that the response to the request can be found under a different URI.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>SERVICE_UNAVAILABLE</strong></td>
+<td>Status code (503) indicating that the HTTP server is temporarily overloaded, and unable to handle the request.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>SERVICE_SWITCHING_PROTOCOLSUNAVAILABLE</strong></td>
+<td>Status code (101) indicating the server is switching protocols according to Upgrade header.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>TEMPORARY_REDIRECT</strong></td>
+<td>Status code (307) indicating that the requested resource resides temporarily under a different URI.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>UNAUTHORIZED</strong></td>
+<td>Status code (401) indicating that the request requires HTTP authentication.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>UNSUPPORTED_MEDIA_TYPE</strong></td>
+<td>Status code (415) indicating that the server is refusing to service the request because the entity of the request is in a format not supported by the requested resource for the requested method.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>USE_PROXY</strong></td>
+<td>Status code (305) indicating that the requested resource MUST be accessed through the proxy given by the Location field.</td>
+<td><em>int</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="compatibility_1">Compatibility</h3>
+<table>
+<thead>
+<tr>
+<th>Rhino</th>
+<th>Nashorn</th>
+<th>V8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<ul>
+<li>Module: <strong>net/http/response</strong></li>
+<li>Definition: <a href="https://github.com/dirigiblelabs/core_api/issues/1">/core_api/issues/1</a></li>
+<li>Source: <a href="https://github.com/dirigiblelabs/core_api/blob/master/core_api/ScriptingServices/net/http/response.js">/net/http/response.js</a></li>
+<li>Status: <strong>beta</strong></li>
+</ul>
+<h3 id="basic-usage_2">Basic Usage</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;net/http/response&#39;</span><span class="p">);</span>
+
+<span class="nx">response</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">);</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">flush</span><span class="p">();</span>
+<span class="nx">response</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="definition_2">Definition</h3>
+<h4 id="functions_2">Functions</h4>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>print(text)</strong></td>
+<td>Prints the text in the response body</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>println(text)</strong></td>
+<td>Prints the text in the response body with line separator at the end</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>flush()</strong></td>
+<td>Flushes the content in the response to the client</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>close()</strong></td>
+<td>Closes the response stream to the client</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>addCookie(cookie)</strong></td>
+<td>Adds a HttpCookie to the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>addHeader(name, Value)</strong></td>
+<td>Adds a header name/value pair to the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setHeader(name, Value)</strong></td>
+<td>Updates a header name/value pair to the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>containsHeader(name)</strong></td>
+<td>Checks existence of the header by name</td>
+<td><em>boolean</em></td>
+</tr>
+<tr>
+<td><strong>getCharacterEncoding()</strong></td>
+<td>Returns the character encoding of the response</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>getContentLength()</strong></td>
+<td>Returns the content length of the response</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>getContentType()</strong></td>
+<td>Returns the content type of the response</td>
+<td><em>string</em></td>
+</tr>
+<tr>
+<td><strong>sendError(code, message)</strong></td>
+<td>Sends an error instruction to the client with the given code and message</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>sendRedirect(location)</strong></td>
+<td>Sends a redirect instruction to the client to the given location</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setCharacterEncoding(encoding)</strong></td>
+<td>Sets the character encoding of the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setContentLength(length)</strong></td>
+<td>Sets the content length of the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setContentType(type)</strong></td>
+<td>Sets the content type of the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>setStatus(status)</strong></td>
+<td>Sets the status of the response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>getOutputStream()</strong></td>
+<td>Returns the OutputStream object</td>
+<td><em>streams.OutputStream</em></td>
+</tr>
+<tr>
+<td><strong>writeStream(inputStream)</strong></td>
+<td>Writes the inputStream to the output stream of this Response</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>writeOutput(bytes)</strong></td>
+<td>Writes the byte array to the output stream of this Response</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="constants_2">Constants</h4>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ACCEPTED</strong></td>
+<td>Status code (202) indicating that a request was accepted for processing, but was not completed.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>BAD_GATEWAY</strong></td>
+<td>Status code (502) indicating that the HTTP server received an invalid response from a server it consulted when acting as a proxy or gateway.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>BAD_REQUEST</strong></td>
+<td>Status code (400) indicating the request sent by the client was syntactically incorrect.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>CONFLICT</strong></td>
+<td>Status code (409) indicating that the request could not be completed due to a conflict with the current state of the resource.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>CONTINUE</strong></td>
+<td>Status code (100) indicating the client can continue.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>CREATED</strong></td>
+<td>Status code (201) indicating the request succeeded and created a new resource on the server.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>EXPECTATION_FAILED</strong></td>
+<td>Status code (417) indicating that the server could not meet the expectation given in the Expect request header.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>FORBIDDEN</strong></td>
+<td>Status code (403) indicating the server understood the request but refused to fulfill it.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>FOUND</strong></td>
+<td>Status code (302) indicating that the resource reside temporarily under a different URI.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>GATEWAY_TIMEOUT</strong></td>
+<td>Status code (504) indicating that the server did not receive a timely response from the upstream server while acting as a gateway or proxy.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>GONE</strong></td>
+<td>Status code (410) indicating that the resource is no longer available at the server and no forwarding address is known.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>HTTP_VERSION_NOT_SUPPORTED</strong></td>
+<td>Status code (505) indicating that the server does not support or refuses to support the HTTP protocol version that was used in the request message.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>INTERNAL_SERVER_ERROR</strong></td>
+<td>Status code (500) indicating an error inside the HTTP server which prevented it from fulfilling the request.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>LENGTH_REQUIRED</strong></td>
+<td>Status code (411) indicating that the request cannot be handled without a defined Content-Length.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>METHOD_NOT_ALLOWED</strong></td>
+<td>Status code (405) indicating that the method specified in the Request-Line is not allowed for the resource identified by the Request-URI.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>MOVED_PERMANENTLY</strong></td>
+<td>Status code (301) indicating that the resource has permanently moved to a new location, and that future references should use a new URI with their requests.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>MOVED_TEMPORARILY</strong></td>
+<td>Status code (302) indicating that the resource has temporarily moved to another location, but that future references should still use the original URI to access the resource.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>MULTIPLE_CHOICES</strong></td>
+<td>Status code (300) indicating that the requested resource corresponds to any one of a set of representations, each with its own specific location.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>NO_CONTENT</strong></td>
+<td>Status code (204) indicating that the request succeeded but that there was no new information to return.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>NON_AUTHORITATIVE_INFORMATION</strong></td>
+<td>Status code (203) indicating that the meta information presented by the client did not originate from the server.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>NOT_ACCEPTABLE</strong></td>
+<td>Status code (406) indicating that the resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to the accept headers sent in the request.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>NOT_FOUND</strong></td>
+<td>Status code (404) indicating that the requested resource is not available.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>NOT_IMPLEMENTED</strong></td>
+<td>Status code (501) indicating the HTTP server does not support the functionality needed to fulfill the request.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>NOT_MODIFIED</strong></td>
+<td>Status code (304) indicating that a conditional GET operation found that the resource was available and not modified.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>OK</strong></td>
+<td>Status code (200) indicating the request succeeded normally.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>PARTIAL_CONTENT</strong></td>
+<td>Status code (206) indicating that the server has fulfilled the partial GET request for the resource.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>PAYMENT_REQUIRED</strong></td>
+<td>Status code (402) reserved for future use.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>PRECONDITION_FAILED</strong></td>
+<td>Status code (412) indicating that the precondition given in one or more of the request-header fields evaluated to false when it was tested on the server.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>PROXY_AUTHENTICATION_REQUIRED</strong></td>
+<td>Status code (407) indicating that the client MUST first authenticate itself with the proxy.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>REQUEST_ENTITY_TOO_LARGE</strong></td>
+<td>Status code (413) indicating that the server is refusing to process the request because the request entity is larger than the server is willing or able to process.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>REQUEST_TIMEOUT</strong></td>
+<td>Status code (408) indicating that the client did not produce a request within the time that the server was prepared to wait.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>REQUEST_URI_TOO_LONG</strong></td>
+<td>Status code (414) indicating that the server is refusing to service the request because the Request-URI is longer than the server is willing to interpret.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>REQUESTED_RANGE_NOT_SATISFIABLE</strong></td>
+<td>Status code (416) indicating that the server cannot serve the requested byte range.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>RESET_CONTENT</strong></td>
+<td>Status code (205) indicating that the agent SHOULD reset the document view which caused the request to be sent.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>SEE_OTHER</strong></td>
+<td>Status code (303) indicating that the response to the request can be found under a different URI.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>SERVICE_UNAVAILABLE</strong></td>
+<td>Status code (503) indicating that the HTTP server is temporarily overloaded, and unable to handle the request.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>SERVICE_SWITCHING_PROTOCOLSUNAVAILABLE</strong></td>
+<td>Status code (101) indicating the server is switching protocols according to Upgrade header.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>TEMPORARY_REDIRECT</strong></td>
+<td>Status code (307) indicating that the requested resource resides temporarily under a different URI.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>UNAUTHORIZED</strong></td>
+<td>Status code (401) indicating that the request requires HTTP authentication.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>UNSUPPORTED_MEDIA_TYPE</strong></td>
+<td>Status code (415) indicating that the server is refusing to service the request because the entity of the request is in a format not supported by the requested resource for the requested method.</td>
+<td><em>int</em></td>
+</tr>
+<tr>
+<td><strong>USE_PROXY</strong></td>
+<td>Status code (305) indicating that the requested resource MUST be accessed through the proxy given by the Location field.</td>
+<td><em>int</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="compatibility_2">Compatibility</h3>
+<table>
+<thead>
+<tr>
+<th>Rhino</th>
+<th>Nashorn</th>
+<th>V8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
